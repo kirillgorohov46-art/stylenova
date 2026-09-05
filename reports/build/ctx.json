@@ -1,0 +1,174 @@
+{
+ "today": "2026-09-05",
+ "rates": {
+  "RUB": 1,
+  "USD": 86.5857,
+  "EUR": 100.5693,
+  "CNY": 12.8849
+ },
+ "context": {
+  "usd_rub": 86.5857,
+  "eur_rub": 100.5693,
+  "cny_rub": 12.8849,
+  "rate_date": "2026-09-05",
+  "rate_source": "Банк России — официальные курсы, установленные 04.09.2026 на 05.09.2026 (cbr.ru недоступен через прокси; значения взяты из публикаций finance.mail.ru, «Ведомостей» и RZN.info, цитирующих ЦБ РФ)",
+  "dram_trend": "Рынок DRAM в 2025–2026 находится в «ИИ-суперцикле»: Samsung, SK Hynix и Micron перебросили мощности на HBM и DDR5 для ИИ-ЦОД (1 ГБ HBM требует в 3–4 раза больше пластин, чем DDR5), Micron разослал EOL-уведомления по DDR4 в июне 2025, а Samsung и SK Hynix отложили сворачивание DDR4 на 2026 г., оставшиеся объёмы Nanya/Winbond спрос не покрывают. По TrendForce контрактные цены DRAM выросли на 81% кв/кв в 1К2026 (Counterpoint — +80–90%), SigmaIntel оценил 2К2026 ещё в +89%, на 3К2026 TrendForce ждёт +13–18% кв/кв, а Morgan Stanley — +50% именно по DDR4; спот DDR4 8Gb в августе 2026 достиг рекордных ~$42,5 — вдвое выше мая. Серверные DDR4 ECC RDIMM подорожали на 60–80%, DDR5 RDIMM — на 100–116% с начала 2025 по 1К2026; по данным российского трекера цен (goha.ru), стоимость модулей ОЗУ достигла 450% от уровня июля 2025 (SODIMM ×3,75, DDR5-4800+ ×5,1), т.е. рост за год более чем в 4–5 раз. Рублёвые примеры: модуль DDR4 16 ГБ — ~15 000 руб. вместо ~10 000 руб. (+51% за квартал, news.mail.ru); серверная Samsung 64 ГБ — с 90 000 до 110 000 руб., Samsung 32 ГБ — с 80 000 до 160 000 руб. (Хабр); из-за сокращения линий DDR4 в ряде случаев стоит столько же, сколько DDR5 (hi-tech.mail.ru). SK Hynix ожидает дефицит DRAM как минимум до 2028 г., поставщики предупреждают о +10–20% в месяц до конца 2026.",
+  "nand_trend": "NAND и SSD растут вслед за DRAM, но медленнее и с признаками насыщения. В 1К2026 цены на чипы NAND для SSD подскочили более чем на 90% к концу 2025 (iXBT), в июне 2026 SSD в российской рознице стоили на 21% дороже, чем годом ранее (finance.mail.ru), а за 2–3 года ценники потребительских SSD выросли в 2–10 раз (iGuides). Причина — ИИ-серверы требуют в 8–10 раз больше памяти, чем обычные, спрос растёт ~40% в год при росте предложения NAND лишь на 14–17% в год. На 3К2026 TrendForce прогнозирует +10–15% кв/кв по контрактным ценам NAND — замедление из-за исчерпания платёжеспособности покупателей ПК и смартфонов; по августовской оценке TrendForce SLC умеренно росла, MLC вышла в плато, а digital-razor фиксирует остановку роста контрактных цен на DRAM/NAND из-за сезонного спада спроса. Для SATA SSD (зрелые TLC/QLC) это означает высокие, но стабилизирующиеся цены; часть аналитиков (Storage Switzerland) ждёт дорогой памяти до конца 2027.",
+  "hdd_trend": "HDD стали третьей жертвой ИИ-бума: Western Digital и Seagate распродали все мощности на 2026 г. (часть контрактов — на 2027–2028), nearline-мощности Seagate распределены до конца 2026, сроки поставки достигают 12 месяцев, на ИИ-заказчиков приходится 89% выручки WD. С сентября 2025 по январь 2026 средняя цена популярных HDD выросла на 46% (по моделям +23…66%), WD Blue 4 ТБ — $99 против $67–85; к концу августа 2026 ёмкие CMR-диски держатся около $50/ТБ, а за 18 месяцев рост оценивают в 100–200%. В РФ (3dnews): HDD 1 ТБ подорожал вдвое — с 5–6 тыс. до более 10 тыс. руб. (+79% с сентября), 4 ТБ — 13,7 тыс. руб. (+53%), 8 ТБ — 32 тыс. руб. (+102%); модели, стоившие летом 2025 3–4 тыс. руб., продаются за 6–10 тыс. (cybersport.metaratings). Быстрее всего дорожают диски 2–8 ТБ — их активно скупают ЦОД, оставляя розницу без запасов (hi-tech.mail.ru); зарубежные трекеры отмечают, что спрос концентрируется на больших ёмкостях, а старые потребительские ёмкости в западной розницe местами дисконтируются — в РФ такого эффекта не видно. Дефицит ожидался минимум до середины 2026 и по факту сохраняется: быстрого снижения цен не ждут, пока ИИ-ЦОД «съедают» ресурсы хранения.",
+  "used_market_notes": "По данным Авито, зимой 2025–2026 75% продаж компьютерных комплектующих на площадке пришлись на ресейл (в Петербурге — 72%); продажи SSD «с рук» в декабре–феврале выросли в ~5,5 раза, ОЗУ — почти вдвое год к году, а во 2П2025 продажи б/у SSD выросли на 31% при средней цене 3 000 руб. Б/у комплектующие в среднем в 2,5 раза дешевле новых: SSD — ~4 000 руб. против ~9 000 руб. за новый (дисконт ~55%), HDD — ~4 000 против ~10 000 руб. (~60%), модуль ОЗУ в ресейле — в среднем 5 000 руб. Риски: у SSD ограниченный ресурс записи (TBW/DWPD) — при выработке ресурса по SMART более 70–80% покупку рекомендуют отклонять; накопители после майнинга за год изнашиваются как за 5+ лет обычной эксплуатации; HDD проверяют по SMART (переназначенные сектора, наработка) и тестами поверхности. Гарантия на б/у практически не работает: чеки теряются, часть производителей и сетей привязывает гарантию к первому владельцу. Покупка оправдана, если продавец показывает результаты тестов/SMART, маркировка совпадает с характеристиками, а цена учитывает износ — для магазина б/у техники это аргумент за собственную гарантию и публикацию SMART-скринов в карточках.",
+  "sources": [
+   {
+    "title": "Официальный курс доллара на 5 сентября 2026 г. (ЦБ РФ) — finance.mail.ru",
+    "url": "https://finance.mail.ru/article/oficialnyj-kurs-dollara-na-5-sentyabrya-2026-69226197/"
+   },
+   {
+    "title": "ЦБ снизил официальный курс доллара до 86,59 рубля — Ведомости",
+    "url": "https://www.vedomosti.ru/finance/news/2026/09/04/1226488-kurs-dollara"
+   },
+   {
+    "title": "ЦБ снизил курс доллара на 5 сентября — RZN.info",
+    "url": "https://www.rzn.info/news/2026/9/4/cb-snizil-kurs-dollara-na-5-sentyabrya-352514.html"
+   },
+   {
+    "title": "Банк России — официальные курсы валют на заданную дату",
+    "url": "https://www.cbr.ru/currency_base/daily/"
+   },
+   {
+    "title": "TrendForce: 1Q26 DRAM industry up 81% QoQ",
+    "url": "https://www.trendforce.com/presscenter/news/20260601-13070.html"
+   },
+   {
+    "title": "TrendForce: AI server demand supports memory prices in 3Q26, gains moderate",
+    "url": "https://www.trendforce.com/presscenter/news/20260703-13134.html"
+   },
+   {
+    "title": "TrendForce: Samsung, SK hynix delay DDR4 phase-out to 2026",
+    "url": "https://www.trendforce.com/news/2025/09/02/news-samsung-sk-hynix-reportedly-delay-phase-out-to-2026-as-ddr4-becomes-unexpected-cash-cow/"
+   },
+   {
+    "title": "TrendForce: Memory giants map 2025-26 exit strategy amid supply crunch",
+    "url": "https://www.trendforce.com/news/2026/01/19/news-out-with-the-old-memory-giants-map-their-2025-26-exit-strategy-amid-supply-crunch/"
+   },
+   {
+    "title": "SigmaIntel: во 2К2026 DRAM подорожала на 89% — Overclockers.ru",
+    "url": "https://overclockers.ru/blog/Scorpion81/show/258157/SigmaIntel-vo-vtorom-kvartale-2026-goda-pamyat-DRAM-podorozhala-na-89"
+   },
+   {
+    "title": "Morgan Stanley: DDR4 вырастет на 50% в 3К2026 — VGTimes",
+    "url": "https://vgtimes.ru/tech-and-hardware/164726-morgan-stanley-ceny-na-ddr4-vyrastut-na-50-v-tretem-kvartale-2026-goda-iz-za-deficita.html"
+   },
+   {
+    "title": "Дефицит DDR4 усиливается — Hi-Tech Mail.ru",
+    "url": "https://hi-tech.mail.ru/news/153562-ii-ostavlyaet-polzovatelej-bez-deshevoj-pamyati-ddr4-zhdet-novyj-skachok-cen/"
+   },
+   {
+    "title": "Цены на серверную память и SSD выросли из-за бума ИИ — Хабр",
+    "url": "https://habr.com/ru/news/1076636/"
+   },
+   {
+    "title": "Цены на ОЗУ для серверов за полгода поднялись на 25–150% — Новости Mail",
+    "url": "https://news.mail.ru/society/72174079/"
+   },
+   {
+    "title": "Оперативная память за год подорожала более чем в 5 раз — GoHa.ru",
+    "url": "https://www.goha.ru/operativnaya-pamyat-za-god-podorozhala-bolee-chem-v-5-raz-lPvVnq"
+   },
+   {
+    "title": "DDR4 8Gb contract & spot price — Silicon Analysts",
+    "url": "https://siliconanalysts.com/market-data/dram-ddr4-price"
+   },
+   {
+    "title": "DRAM crisis may last until 2028 — Notebookcheck",
+    "url": "https://www.notebookcheck.net/DRAM-crisis-may-last-until-2028-SK-Hynix-sees-no-quick-recovery.1187137.0.html"
+   },
+   {
+    "title": "Кризис DRAM 2025–2026 — HYPERPC",
+    "url": "https://hyperpc.ru/blog/gaming-pc/dram-market-crisis"
+   },
+   {
+    "title": "Цены на ОЗУ и SSD взлетели почти вдвое в начале 2026 — iXBT",
+    "url": "https://www.ixbt.com/news/2026/02/09/pamjat-po-cene-zolota-ceny-na-ozu-i-ssd-vzleteli-pochti-vdvoe-v-nachale-2026-goda--i-oni-prodolzhat-rasti.html"
+   },
+   {
+    "title": "Рост цен на ОЗУ и SSD в Петербурге, прогноз 2026–2027 — finance.mail.ru",
+    "url": "https://finance.mail.ru/article/raskryto-stoit-li-otkladyvat-apgrejd-pk-na-fone-rosta-cen-69222947/"
+   },
+   {
+    "title": "Насколько подорожали SSD к 2026 году — iGuides",
+    "url": "https://www.iguides.ru/main/other/vot_naskolko_podorozhali_ssd_k_2026_godu_naglyadnoe_sravnenie_tsennikov/"
+   },
+   {
+    "title": "Рост цен на память и SSD останавливается — Digital Razor",
+    "url": "https://digital-razor.ru/media/news/hardware/dram-nand-price-stop-rise/"
+   },
+   {
+    "title": "TrendForce: DRAM and NAND remain more expensive in Q3 2026 — igor'sLAB",
+    "url": "https://www.igorslab.de/en/dram-and-nand-remain-more-expensive-trendforce-sees-slowing-but-still-rising-memory-prices-q3-2026/"
+   },
+   {
+    "title": "Memory and Flash Prices Are Not Coming Down (Through 2027) — Storage Switzerland",
+    "url": "https://storageswiss.com/2026/05/06/memory-and-flash-prices-not-coming-down/"
+   },
+   {
+    "title": "Жёсткие диски пали очередной жертвой ИИ — цены в России — 3DNews",
+    "url": "https://3dnews.ru/1135426/gyostkie-diski-pali-ocherednoy-gertvoy-ii-s-sentyabrya-tseni-vzleteli-i-v-rossii-toge"
+   },
+   {
+    "title": "Почему жёсткие диски резко подорожали — Hi-Tech Mail.ru",
+    "url": "https://hi-tech.mail.ru/news/142868-krizis-dobralsya-do-hdd-chto-proishodit/"
+   },
+   {
+    "title": "Цены на HDD и SSD взлетели до 10 тысяч рублей — Metaratings",
+    "url": "https://cybersport.metaratings.ru/articles/ceny-na-hdd-vzleteli-do-10-tysyach-rublei-chto-proiskhodit-i-kogda-podesheveet-khranenie-dannykh/"
+   },
+   {
+    "title": "Western Digital sold out of hard drives for all of 2026 — Tom's Hardware",
+    "url": "https://www.tomshardware.com/pc-components/hdds/western-digital-is-already-sold-out-of-hard-drives-for-all-of-2026-chief-says-some-long-term-agreements-for-2027-and-2028-already-in-place"
+   },
+   {
+    "title": "Hard Drive Prices Surge 50% as AI Data Centers Buy Out 2026 Supply — WinBuzzer",
+    "url": "https://winbuzzer.com/2026/02/18/wd-seagate-2026-hard-drive-shortage-ai-data-centers-xcxwbn/"
+   },
+   {
+    "title": "HDD Prices Soar, Sparking Fears of Incoming Shortage — TechPowerUp",
+    "url": "https://www.techpowerup.com/344108/hdd-prices-soar-sparking-fears-of-incoming-shortage"
+   },
+   {
+    "title": "Hard Drive Price Trends 2026: Cost Per TB Tracker — TheDiskGuide",
+    "url": "https://thediskguide.com/price-trends"
+   },
+   {
+    "title": "Hard Drive Price Forecast — Cloudzat",
+    "url": "https://cloudzat.com/price-forecast/hard-drives/"
+   },
+   {
+    "title": "Авито: продажи оперативной памяти и SSD выросли в несколько раз — Hightech.plus",
+    "url": "https://hightech.plus/2026/03/24/avito-prodazhi-operativnoi-pamyati-i-ssd-virosli-v-neskolko-raz"
+   },
+   {
+    "title": "«Авито»: продажи ОЗУ и SSD выросли в несколько раз — CNews",
+    "url": "https://www.cnews.ru/news/line/2026-03-24_avito_prodazhi_operativnoj"
+   },
+   {
+    "title": "Авито: продажи ОЗУ и SSD в ресейле выросли — Мойка78",
+    "url": "https://moika78.ru/news/2026-03-25/1280289-avito-prodazhi-operativnoj-pamyati-i-ssd-v-resejle-vyrosli-v-neskolko-raz/"
+   },
+   {
+    "title": "Авито: продажи ОЗУ и SSD в Петербурге выросли в 2,5 раза — Brief24",
+    "url": "https://brief24.ru/spb/2026/3/26/270290"
+   },
+   {
+    "title": "Стоит ли покупать б/у SSD и HDD: риски, тестирование — GamesQA",
+    "url": "https://gamesqa.ru/kompyutery/mozhno-li-pokupat-b-u-ssd-i-hdd-28079/"
+   },
+   {
+    "title": "Скрытые риски покупки б/у HDD и SSD — Ambeteco",
+    "url": "https://www.ambeteco.com/ru/article/Offigneum/bezopasna-li-pokupka-bu-zhestkikh-diskov-i-ssd"
+   },
+   {
+    "title": "Как проверить б/у SSD перед покупкой — Рамблер",
+    "url": "https://sci.rambler.ru/kompyutery/55893666-kak-proverit-b-u-ssd-pered-pokupkoy/"
+   }
+  ]
+ }
+}

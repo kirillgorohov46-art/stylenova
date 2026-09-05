@@ -1,0 +1,1136 @@
+{
+ "today": "2026-09-05",
+ "today_ru": "5 сентября 2026",
+ "rates": {
+  "RUB": 1,
+  "USD": 86.5857,
+  "EUR": 100.5693,
+  "CNY": 12.8849
+ },
+ "context": {
+  "usd_rub": 86.5857,
+  "eur_rub": 100.5693,
+  "cny_rub": 12.8849,
+  "rate_date": "2026-09-05",
+  "rate_source": "Банк России — официальные курсы, установленные 04.09.2026 на 05.09.2026 (cbr.ru недоступен через прокси; значения взяты из публикаций finance.mail.ru, «Ведомостей» и RZN.info, цитирующих ЦБ РФ)",
+  "dram_trend": "Рынок DRAM в 2025–2026 находится в «ИИ-суперцикле»: Samsung, SK Hynix и Micron перебросили мощности на HBM и DDR5 для ИИ-ЦОД (1 ГБ HBM требует в 3–4 раза больше пластин, чем DDR5), Micron разослал EOL-уведомления по DDR4 в июне 2025, а Samsung и SK Hynix отложили сворачивание DDR4 на 2026 г., оставшиеся объёмы Nanya/Winbond спрос не покрывают. По TrendForce контрактные цены DRAM выросли на 81% кв/кв в 1К2026 (Counterpoint — +80–90%), SigmaIntel оценил 2К2026 ещё в +89%, на 3К2026 TrendForce ждёт +13–18% кв/кв, а Morgan Stanley — +50% именно по DDR4; спот DDR4 8Gb в августе 2026 достиг рекордных ~$42,5 — вдвое выше мая. Серверные DDR4 ECC RDIMM подорожали на 60–80%, DDR5 RDIMM — на 100–116% с начала 2025 по 1К2026; по данным российского трекера цен (goha.ru), стоимость модулей ОЗУ достигла 450% от уровня июля 2025 (SODIMM ×3,75, DDR5-4800+ ×5,1), т.е. рост за год более чем в 4–5 раз. Рублёвые примеры: модуль DDR4 16 ГБ — ~15 000 руб. вместо ~10 000 руб. (+51% за квартал, news.mail.ru); серверная Samsung 64 ГБ — с 90 000 до 110 000 руб., Samsung 32 ГБ — с 80 000 до 160 000 руб. (Хабр); из-за сокращения линий DDR4 в ряде случаев стоит столько же, сколько DDR5 (hi-tech.mail.ru). SK Hynix ожидает дефицит DRAM как минимум до 2028 г., поставщики предупреждают о +10–20% в месяц до конца 2026.",
+  "nand_trend": "NAND и SSD растут вслед за DRAM, но медленнее и с признаками насыщения. В 1К2026 цены на чипы NAND для SSD подскочили более чем на 90% к концу 2025 (iXBT), в июне 2026 SSD в российской рознице стоили на 21% дороже, чем годом ранее (finance.mail.ru), а за 2–3 года ценники потребительских SSD выросли в 2–10 раз (iGuides). Причина — ИИ-серверы требуют в 8–10 раз больше памяти, чем обычные, спрос растёт ~40% в год при росте предложения NAND лишь на 14–17% в год. На 3К2026 TrendForce прогнозирует +10–15% кв/кв по контрактным ценам NAND — замедление из-за исчерпания платёжеспособности покупателей ПК и смартфонов; по августовской оценке TrendForce SLC умеренно росла, MLC вышла в плато, а digital-razor фиксирует остановку роста контрактных цен на DRAM/NAND из-за сезонного спада спроса. Для SATA SSD (зрелые TLC/QLC) это означает высокие, но стабилизирующиеся цены; часть аналитиков (Storage Switzerland) ждёт дорогой памяти до конца 2027.",
+  "hdd_trend": "HDD стали третьей жертвой ИИ-бума: Western Digital и Seagate распродали все мощности на 2026 г. (часть контрактов — на 2027–2028), nearline-мощности Seagate распределены до конца 2026, сроки поставки достигают 12 месяцев, на ИИ-заказчиков приходится 89% выручки WD. С сентября 2025 по январь 2026 средняя цена популярных HDD выросла на 46% (по моделям +23…66%), WD Blue 4 ТБ — $99 против $67–85; к концу августа 2026 ёмкие CMR-диски держатся около $50/ТБ, а за 18 месяцев рост оценивают в 100–200%. В РФ (3dnews): HDD 1 ТБ подорожал вдвое — с 5–6 тыс. до более 10 тыс. руб. (+79% с сентября), 4 ТБ — 13,7 тыс. руб. (+53%), 8 ТБ — 32 тыс. руб. (+102%); модели, стоившие летом 2025 3–4 тыс. руб., продаются за 6–10 тыс. (cybersport.metaratings). Быстрее всего дорожают диски 2–8 ТБ — их активно скупают ЦОД, оставляя розницу без запасов (hi-tech.mail.ru); зарубежные трекеры отмечают, что спрос концентрируется на больших ёмкостях, а старые потребительские ёмкости в западной розницe местами дисконтируются — в РФ такого эффекта не видно. Дефицит ожидался минимум до середины 2026 и по факту сохраняется: быстрого снижения цен не ждут, пока ИИ-ЦОД «съедают» ресурсы хранения.",
+  "used_market_notes": "По данным Авито, зимой 2025–2026 75% продаж компьютерных комплектующих на площадке пришлись на ресейл (в Петербурге — 72%); продажи SSD «с рук» в декабре–феврале выросли в ~5,5 раза, ОЗУ — почти вдвое год к году, а во 2П2025 продажи б/у SSD выросли на 31% при средней цене 3 000 руб. Б/у комплектующие в среднем в 2,5 раза дешевле новых: SSD — ~4 000 руб. против ~9 000 руб. за новый (дисконт ~55%), HDD — ~4 000 против ~10 000 руб. (~60%), модуль ОЗУ в ресейле — в среднем 5 000 руб. Риски: у SSD ограниченный ресурс записи (TBW/DWPD) — при выработке ресурса по SMART более 70–80% покупку рекомендуют отклонять; накопители после майнинга за год изнашиваются как за 5+ лет обычной эксплуатации; HDD проверяют по SMART (переназначенные сектора, наработка) и тестами поверхности. Гарантия на б/у практически не работает: чеки теряются, часть производителей и сетей привязывает гарантию к первому владельцу. Покупка оправдана, если продавец показывает результаты тестов/SMART, маркировка совпадает с характеристиками, а цена учитывает износ — для магазина б/у техники это аргумент за собственную гарантию и публикацию SMART-скринов в карточках.",
+  "sources": [
+   {
+    "title": "Официальный курс доллара на 5 сентября 2026 г. (ЦБ РФ) — finance.mail.ru",
+    "url": "https://finance.mail.ru/article/oficialnyj-kurs-dollara-na-5-sentyabrya-2026-69226197/"
+   },
+   {
+    "title": "ЦБ снизил официальный курс доллара до 86,59 рубля — Ведомости",
+    "url": "https://www.vedomosti.ru/finance/news/2026/09/04/1226488-kurs-dollara"
+   },
+   {
+    "title": "ЦБ снизил курс доллара на 5 сентября — RZN.info",
+    "url": "https://www.rzn.info/news/2026/9/4/cb-snizil-kurs-dollara-na-5-sentyabrya-352514.html"
+   },
+   {
+    "title": "Банк России — официальные курсы валют на заданную дату",
+    "url": "https://www.cbr.ru/currency_base/daily/"
+   },
+   {
+    "title": "TrendForce: 1Q26 DRAM industry up 81% QoQ",
+    "url": "https://www.trendforce.com/presscenter/news/20260601-13070.html"
+   },
+   {
+    "title": "TrendForce: AI server demand supports memory prices in 3Q26, gains moderate",
+    "url": "https://www.trendforce.com/presscenter/news/20260703-13134.html"
+   },
+   {
+    "title": "TrendForce: Samsung, SK hynix delay DDR4 phase-out to 2026",
+    "url": "https://www.trendforce.com/news/2025/09/02/news-samsung-sk-hynix-reportedly-delay-phase-out-to-2026-as-ddr4-becomes-unexpected-cash-cow/"
+   },
+   {
+    "title": "TrendForce: Memory giants map 2025-26 exit strategy amid supply crunch",
+    "url": "https://www.trendforce.com/news/2026/01/19/news-out-with-the-old-memory-giants-map-their-2025-26-exit-strategy-amid-supply-crunch/"
+   },
+   {
+    "title": "SigmaIntel: во 2К2026 DRAM подорожала на 89% — Overclockers.ru",
+    "url": "https://overclockers.ru/blog/Scorpion81/show/258157/SigmaIntel-vo-vtorom-kvartale-2026-goda-pamyat-DRAM-podorozhala-na-89"
+   },
+   {
+    "title": "Morgan Stanley: DDR4 вырастет на 50% в 3К2026 — VGTimes",
+    "url": "https://vgtimes.ru/tech-and-hardware/164726-morgan-stanley-ceny-na-ddr4-vyrastut-na-50-v-tretem-kvartale-2026-goda-iz-za-deficita.html"
+   },
+   {
+    "title": "Дефицит DDR4 усиливается — Hi-Tech Mail.ru",
+    "url": "https://hi-tech.mail.ru/news/153562-ii-ostavlyaet-polzovatelej-bez-deshevoj-pamyati-ddr4-zhdet-novyj-skachok-cen/"
+   },
+   {
+    "title": "Цены на серверную память и SSD выросли из-за бума ИИ — Хабр",
+    "url": "https://habr.com/ru/news/1076636/"
+   },
+   {
+    "title": "Цены на ОЗУ для серверов за полгода поднялись на 25–150% — Новости Mail",
+    "url": "https://news.mail.ru/society/72174079/"
+   },
+   {
+    "title": "Оперативная память за год подорожала более чем в 5 раз — GoHa.ru",
+    "url": "https://www.goha.ru/operativnaya-pamyat-za-god-podorozhala-bolee-chem-v-5-raz-lPvVnq"
+   },
+   {
+    "title": "DDR4 8Gb contract & spot price — Silicon Analysts",
+    "url": "https://siliconanalysts.com/market-data/dram-ddr4-price"
+   },
+   {
+    "title": "DRAM crisis may last until 2028 — Notebookcheck",
+    "url": "https://www.notebookcheck.net/DRAM-crisis-may-last-until-2028-SK-Hynix-sees-no-quick-recovery.1187137.0.html"
+   },
+   {
+    "title": "Кризис DRAM 2025–2026 — HYPERPC",
+    "url": "https://hyperpc.ru/blog/gaming-pc/dram-market-crisis"
+   },
+   {
+    "title": "Цены на ОЗУ и SSD взлетели почти вдвое в начале 2026 — iXBT",
+    "url": "https://www.ixbt.com/news/2026/02/09/pamjat-po-cene-zolota-ceny-na-ozu-i-ssd-vzleteli-pochti-vdvoe-v-nachale-2026-goda--i-oni-prodolzhat-rasti.html"
+   },
+   {
+    "title": "Рост цен на ОЗУ и SSD в Петербурге, прогноз 2026–2027 — finance.mail.ru",
+    "url": "https://finance.mail.ru/article/raskryto-stoit-li-otkladyvat-apgrejd-pk-na-fone-rosta-cen-69222947/"
+   },
+   {
+    "title": "Насколько подорожали SSD к 2026 году — iGuides",
+    "url": "https://www.iguides.ru/main/other/vot_naskolko_podorozhali_ssd_k_2026_godu_naglyadnoe_sravnenie_tsennikov/"
+   },
+   {
+    "title": "Рост цен на память и SSD останавливается — Digital Razor",
+    "url": "https://digital-razor.ru/media/news/hardware/dram-nand-price-stop-rise/"
+   },
+   {
+    "title": "TrendForce: DRAM and NAND remain more expensive in Q3 2026 — igor'sLAB",
+    "url": "https://www.igorslab.de/en/dram-and-nand-remain-more-expensive-trendforce-sees-slowing-but-still-rising-memory-prices-q3-2026/"
+   },
+   {
+    "title": "Memory and Flash Prices Are Not Coming Down (Through 2027) — Storage Switzerland",
+    "url": "https://storageswiss.com/2026/05/06/memory-and-flash-prices-not-coming-down/"
+   },
+   {
+    "title": "Жёсткие диски пали очередной жертвой ИИ — цены в России — 3DNews",
+    "url": "https://3dnews.ru/1135426/gyostkie-diski-pali-ocherednoy-gertvoy-ii-s-sentyabrya-tseni-vzleteli-i-v-rossii-toge"
+   },
+   {
+    "title": "Почему жёсткие диски резко подорожали — Hi-Tech Mail.ru",
+    "url": "https://hi-tech.mail.ru/news/142868-krizis-dobralsya-do-hdd-chto-proishodit/"
+   },
+   {
+    "title": "Цены на HDD и SSD взлетели до 10 тысяч рублей — Metaratings",
+    "url": "https://cybersport.metaratings.ru/articles/ceny-na-hdd-vzleteli-do-10-tysyach-rublei-chto-proiskhodit-i-kogda-podesheveet-khranenie-dannykh/"
+   },
+   {
+    "title": "Western Digital sold out of hard drives for all of 2026 — Tom's Hardware",
+    "url": "https://www.tomshardware.com/pc-components/hdds/western-digital-is-already-sold-out-of-hard-drives-for-all-of-2026-chief-says-some-long-term-agreements-for-2027-and-2028-already-in-place"
+   },
+   {
+    "title": "Hard Drive Prices Surge 50% as AI Data Centers Buy Out 2026 Supply — WinBuzzer",
+    "url": "https://winbuzzer.com/2026/02/18/wd-seagate-2026-hard-drive-shortage-ai-data-centers-xcxwbn/"
+   },
+   {
+    "title": "HDD Prices Soar, Sparking Fears of Incoming Shortage — TechPowerUp",
+    "url": "https://www.techpowerup.com/344108/hdd-prices-soar-sparking-fears-of-incoming-shortage"
+   },
+   {
+    "title": "Hard Drive Price Trends 2026: Cost Per TB Tracker — TheDiskGuide",
+    "url": "https://thediskguide.com/price-trends"
+   },
+   {
+    "title": "Hard Drive Price Forecast — Cloudzat",
+    "url": "https://cloudzat.com/price-forecast/hard-drives/"
+   },
+   {
+    "title": "Авито: продажи оперативной памяти и SSD выросли в несколько раз — Hightech.plus",
+    "url": "https://hightech.plus/2026/03/24/avito-prodazhi-operativnoi-pamyati-i-ssd-virosli-v-neskolko-raz"
+   },
+   {
+    "title": "«Авито»: продажи ОЗУ и SSD выросли в несколько раз — CNews",
+    "url": "https://www.cnews.ru/news/line/2026-03-24_avito_prodazhi_operativnoj"
+   },
+   {
+    "title": "Авито: продажи ОЗУ и SSD в ресейле выросли — Мойка78",
+    "url": "https://moika78.ru/news/2026-03-25/1280289-avito-prodazhi-operativnoj-pamyati-i-ssd-v-resejle-vyrosli-v-neskolko-raz/"
+   },
+   {
+    "title": "Авито: продажи ОЗУ и SSD в Петербурге выросли в 2,5 раза — Brief24",
+    "url": "https://brief24.ru/spb/2026/3/26/270290"
+   },
+   {
+    "title": "Стоит ли покупать б/у SSD и HDD: риски, тестирование — GamesQA",
+    "url": "https://gamesqa.ru/kompyutery/mozhno-li-pokupat-b-u-ssd-i-hdd-28079/"
+   },
+   {
+    "title": "Скрытые риски покупки б/у HDD и SSD — Ambeteco",
+    "url": "https://www.ambeteco.com/ru/article/Offigneum/bezopasna-li-pokupka-bu-zhestkikh-diskov-i-ssd"
+   },
+   {
+    "title": "Как проверить б/у SSD перед покупкой — Рамблер",
+    "url": "https://sci.rambler.ru/kompyutery/55893666-kak-proverit-b-u-ssd-pered-pokupkoy/"
+   }
+  ]
+ },
+ "skus": [
+  {
+   "key": "RAM-4",
+   "cat": "RAM",
+   "label": "Оперативная память DDR4 4 ГБ (модуль DIMM)",
+   "short": "DDR4 4 ГБ",
+   "cap_gb": 4,
+   "new": {
+    "min": 990,
+    "where": "Ситилинк",
+    "conf": "med",
+    "typ": [
+     990,
+     2200
+    ],
+    "note": "Одиночный модуль DIMM. 4 ГБ практически снят с производства, ассортимент тонкий.",
+    "offers": [
+     {
+      "market": "Ситилинк",
+      "title": "Kingmax KM-LD4-2666-4GS DDR4 4 ГБ 2666",
+      "price_rub": 990,
+      "conf": "med",
+      "note": "модуль DIMM",
+      "url": "citilink.ru"
+     },
+     {
+      "market": "Ситилинк",
+      "title": "Patriot PSD44G240081 DDR4 4 ГБ 2400",
+      "price_rub": 1090,
+      "conf": "med",
+      "note": "",
+      "url": "citilink.ru"
+     },
+     {
+      "market": "Ситилинк",
+      "title": "Patriot Signature PSD44G266681 DDR4 4 ГБ",
+      "price_rub": 1190,
+      "conf": "med",
+      "note": "1150 ₽ по клубной цене",
+      "url": "citilink.ru"
+     },
+     {
+      "market": "E-katalog",
+      "title": "Crucial Value DDR4 1x4 ГБ CT4G4DFS824A",
+      "price_rub": 1400,
+      "conf": "med",
+      "note": "от (минимум в категории)",
+      "url": "e-katalog.ru"
+     },
+     {
+      "market": "Регард",
+      "title": "Netac Basic DDR4-2666 4 ГБ",
+      "price_rub": 1600,
+      "conf": "med",
+      "note": "",
+      "url": "regard.ru"
+     },
+     {
+      "market": "другое",
+      "title": "Apacer 4 ГБ 2666 (EL.04G2V.KNH)",
+      "price_rub": 740,
+      "conf": "low",
+      "note": "цена из сниппета, продавец неясен",
+      "url": ""
+     },
+     {
+      "market": "Wildberries",
+      "title": "Apacer 4 ГБ (EL.04G2V.KNH)",
+      "price_rub": 1638,
+      "conf": "med",
+      "note": "",
+      "url": "wildberries.ru"
+     }
+    ]
+   },
+   "used": {
+    "min": 650,
+    "where": "Авито / вторичный рынок",
+    "conf": "low",
+    "typ": [
+     650,
+     1300
+    ],
+    "note": "Оценка: модуль 4 ГБ на вторичке стоит около 40–55 % от розницы; спрос низкий, часто идут в связках.",
+    "offers": [
+     {
+      "market": "Авито (оценка)",
+      "title": "DDR4 4 ГБ б/у, рабочий модуль",
+      "price_rub": 700,
+      "conf": "low",
+      "note": "оценка по дисконту к рознице",
+      "url": ""
+     },
+     {
+      "market": "eBay (референс)",
+      "title": "DDR4 4 ГБ used",
+      "price_rub": 520,
+      "conf": "low",
+      "note": "6 USD, международный референс",
+      "url": "ebay.com"
+     }
+    ]
+   },
+   "flags": []
+  },
+  {
+   "key": "RAM-8",
+   "cat": "RAM",
+   "label": "Оперативная память DDR4 8 ГБ (модуль DIMM)",
+   "short": "DDR4 8 ГБ",
+   "cap_gb": 8,
+   "new": {
+    "min": 4243,
+    "where": "Яндекс Маркет",
+    "conf": "med",
+    "typ": [
+     4243,
+     5800
+    ],
+    "note": "Одиночный модуль DIMM 2666/3200. Цены выросли из-за дефицита DRAM 2026.",
+    "offers": [
+     {
+      "market": "Яндекс Маркет",
+      "title": "Digma DDR4 8 ГБ 2666 DIMM",
+      "price_rub": 4243,
+      "conf": "med",
+      "note": "бюджетный бренд",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "Netac Shadow S DDR4 8 ГБ 3200",
+      "price_rub": 4876,
+      "conf": "med",
+      "note": "с картой Яндекс Пэй",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "Ситилинк",
+      "title": "Crucial CT8G4DFRA266 DDR4 8 ГБ 2666 DIMM",
+      "price_rub": 5290,
+      "conf": "med",
+      "note": "",
+      "url": "citilink.ru"
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "Samsung M471/M378 DDR4 8 ГБ 3200",
+      "price_rub": 5584,
+      "conf": "med",
+      "note": "",
+      "url": "market.yandex.ru"
+     }
+    ]
+   },
+   "used": {
+    "min": 2400,
+    "where": "Авито / вторичный рынок",
+    "conf": "med",
+    "typ": [
+     2500,
+     3900
+    ],
+    "note": "Оценка: б/у модуль 8 ГБ ~55–60 % от розницы. Продажи ОЗУ на вторичке за год почти удвоились (Авито).",
+    "offers": [
+     {
+      "market": "Авито (оценка)",
+      "title": "DDR4 8 ГБ б/у, проверенный модуль",
+      "price_rub": 2600,
+      "conf": "med",
+      "note": "оценка по дисконту к рознице",
+      "url": ""
+     },
+     {
+      "market": "eBay (референс)",
+      "title": "DDR4 8 ГБ used Samsung/Micron",
+      "price_rub": 866,
+      "conf": "low",
+      "note": "≈9–12 USD, международный референс",
+      "url": "ebay.com"
+     }
+    ]
+   },
+   "flags": []
+  },
+  {
+   "key": "RAM-16",
+   "cat": "RAM",
+   "label": "Оперативная память DDR4 16 ГБ (модуль DIMM)",
+   "short": "DDR4 16 ГБ",
+   "cap_gb": 16,
+   "new": {
+    "min": 10551,
+    "where": "Яндекс Маркет",
+    "conf": "med",
+    "typ": [
+     10500,
+     15000
+    ],
+    "note": "Одиночный модуль 1x16. Резкий рост за 2026: до дефицита 16 ГБ стоили ~7,4–9,2 тыс. ₽.",
+    "offers": [
+     {
+      "market": "Яндекс Маркет",
+      "title": "Kingspec KS3200D4P12016G DDR4 16 ГБ 3200",
+      "price_rub": 10551,
+      "conf": "med",
+      "note": "с картой Яндекс Пэй",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "Netac Shadow II DDR4 16 ГБ 3200",
+      "price_rub": 11833,
+      "conf": "med",
+      "note": "с картой Яндекс Пэй",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "Ozon",
+      "title": "CBR DDR4 16 ГБ 2666 DIMM (1x16)",
+      "price_rub": 21300,
+      "conf": "low",
+      "note": "верхняя граница",
+      "url": "ozon.ru"
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "A-Data AD4S320016G DDR4 16 ГБ 3200",
+      "price_rub": 24564,
+      "conf": "low",
+      "note": "премиум/выброс",
+      "url": "market.yandex.ru"
+     }
+    ]
+   },
+   "used": {
+    "min": 6000,
+    "where": "Авито / вторичный рынок",
+    "conf": "low",
+    "typ": [
+     6000,
+     9000
+    ],
+    "note": "Оценка: б/у 16 ГБ ~55–60 % от текущей розницы; из-за дефицита разрыв новое/б/у сократился.",
+    "offers": [
+     {
+      "market": "Авито (оценка)",
+      "title": "DDR4 16 ГБ б/у, модуль 1x16",
+      "price_rub": 6500,
+      "conf": "low",
+      "note": "оценка по дисконту к рознице",
+      "url": ""
+     }
+    ]
+   },
+   "flags": []
+  },
+  {
+   "key": "RAM-32",
+   "cat": "RAM",
+   "label": "Оперативная память DDR4 32 ГБ (модуль/кит)",
+   "short": "DDR4 32 ГБ",
+   "cap_gb": 32,
+   "new": {
+    "min": 17463,
+    "where": "Российские маркетплейсы",
+    "conf": "low",
+    "typ": [
+     17000,
+     29000
+    ],
+    "note": "Одиночный модуль 1x32 в рознице редок, чаще продаётся кит 2x16. Цены сильно выросли.",
+    "offers": [
+     {
+      "market": "Российские площадки",
+      "title": "DDR4 32 ГБ (модуль)",
+      "price_rub": 17463,
+      "conf": "low",
+      "note": "оценка нижней границы",
+      "url": ""
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "Netac Shadow II DDR4 32 ГБ (2x16) 3200",
+      "price_rub": 28326,
+      "conf": "med",
+      "note": "кит 2x16",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "Эльдорадо",
+      "title": "Kingston FURY Beast RGB 32 ГБ 3200",
+      "price_rub": 14999,
+      "conf": "low",
+      "note": "вероятно кит/акция, требует проверки",
+      "url": "eldorado.ru"
+     }
+    ]
+   },
+   "used": {
+    "min": 11000,
+    "where": "Авито / вторичный рынок",
+    "conf": "low",
+    "typ": [
+     11000,
+     17000
+    ],
+    "note": "Оценка: б/у 32 ГБ (модуль или кит 2x16) ~55–65 % от розницы.",
+    "offers": [
+     {
+      "market": "Авито (оценка)",
+      "title": "DDR4 32 ГБ б/у (2x16 или 1x32)",
+      "price_rub": 12000,
+      "conf": "low",
+      "note": "оценка по дисконту к рознице",
+      "url": ""
+     }
+    ]
+   },
+   "flags": []
+  },
+  {
+   "key": "SSD-128",
+   "cat": "SSD",
+   "label": "SSD SATA 120–128 ГБ 2.5\"",
+   "short": "SSD 128 ГБ",
+   "cap_gb": 128,
+   "new": {
+    "min": 1200,
+    "where": "агрегатор Hardprice",
+    "conf": "med",
+    "typ": [
+     1200,
+     2500
+    ],
+    "note": "Kingston A400 120 ГБ — базовая бюджетная модель. 120/128 ГБ постепенно уходят с рынка.",
+    "offers": [
+     {
+      "market": "Hardprice",
+      "title": "Kingston A400 SA400S37/120G 120 ГБ 2.5\" SATA",
+      "price_rub": 1200,
+      "conf": "med",
+      "note": "от (минимум)",
+      "url": "hardprice.ru"
+     },
+     {
+      "market": "Ситилинк",
+      "title": "Kingston A400 120 ГБ 2.5\" SATA III",
+      "price_rub": 1690,
+      "conf": "med",
+      "note": "",
+      "url": "citilink.ru"
+     }
+    ]
+   },
+   "used": {
+    "min": 700,
+    "where": "Авито / вторичный рынок",
+    "conf": "low",
+    "typ": [
+     700,
+     1400
+    ],
+    "note": "Оценка: б/у SSD 128 ГБ ~45–55 % от розницы. Обязательна проверка ресурса по SMART.",
+    "offers": [
+     {
+      "market": "Авито (оценка)",
+      "title": "SSD 128 ГБ б/у, SMART в норме",
+      "price_rub": 800,
+      "conf": "low",
+      "note": "оценка по дисконту к рознице",
+      "url": ""
+     }
+    ]
+   },
+   "flags": []
+  },
+  {
+   "key": "SSD-240",
+   "cat": "SSD",
+   "label": "SSD SATA 240–256 ГБ 2.5\"",
+   "short": "SSD 240 ГБ",
+   "cap_gb": 240,
+   "new": {
+    "min": 2490,
+    "where": "Российские маркетплейсы",
+    "conf": "low",
+    "typ": [
+     2500,
+     5000
+    ],
+    "note": "Бюджетные бренды (Digma, Smartbuy, Netac). Kingston A400 240 у части продавцов заметно дороже (см. ниже).",
+    "offers": [
+     {
+      "market": "Российские площадки",
+      "title": "SSD SATA 240 ГБ бюджетный бренд",
+      "price_rub": 2490,
+      "conf": "low",
+      "note": "оценка нижней границы",
+      "url": ""
+     },
+     {
+      "market": "NIX",
+      "title": "Kingston A400 SA400S37/240G 240 ГБ 2.5\" SATA",
+      "price_rub": 7782,
+      "conf": "med",
+      "note": "конкретная цена, выше бюджетных",
+      "url": "nix.ru"
+     }
+    ]
+   },
+   "used": {
+    "min": 1300,
+    "where": "Авито / вторичный рынок",
+    "conf": "low",
+    "typ": [
+     1400,
+     2600
+    ],
+    "note": "Оценка: б/у SSD 240 ГБ ~45–55 % от розницы.",
+    "offers": [
+     {
+      "market": "Авито (оценка)",
+      "title": "SSD 240 ГБ б/у",
+      "price_rub": 1500,
+      "conf": "low",
+      "note": "оценка по дисконту к рознице",
+      "url": ""
+     }
+    ]
+   },
+   "flags": []
+  },
+  {
+   "key": "SSD-512",
+   "cat": "SSD",
+   "label": "SSD SATA 480–512 ГБ 2.5\"",
+   "short": "SSD 512 ГБ",
+   "cap_gb": 512,
+   "new": {
+    "min": 5922,
+    "where": "Яндекс Маркет",
+    "conf": "med",
+    "typ": [
+     6000,
+     9000
+    ],
+    "note": "Бюджетные TLC-модели. Netac N600S 512 у отдельных продавцов — резкий выброс (24 тыс. ₽).",
+    "offers": [
+     {
+      "market": "Яндекс Маркет",
+      "title": "QOPP 512 ГБ SATA III 2.5\"",
+      "price_rub": 5922,
+      "conf": "med",
+      "note": "минимум в выдаче",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "A-DATA Ultimate SU650 512 ГБ SATA",
+      "price_rub": 7139,
+      "conf": "med",
+      "note": "",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "Netac N600S 512 ГБ SATA",
+      "price_rub": 24113,
+      "conf": "low",
+      "note": "выброс, требует проверки",
+      "url": "market.yandex.ru"
+     }
+    ]
+   },
+   "used": {
+    "min": 2800,
+    "where": "Авито / вторичный рынок",
+    "conf": "med",
+    "typ": [
+     2900,
+     4500
+    ],
+    "note": "Оценка: б/у SSD 512 ГБ ~45–55 % от розницы. Средняя цена б/у SSD на Авито ~3 000 ₽.",
+    "offers": [
+     {
+      "market": "Авито (оценка)",
+      "title": "SSD 512 ГБ б/у, SMART в норме",
+      "price_rub": 3000,
+      "conf": "med",
+      "note": "средняя цена б/у SSD на Авито",
+      "url": ""
+     }
+    ]
+   },
+   "flags": []
+  },
+  {
+   "key": "SSD-1000",
+   "cat": "SSD",
+   "label": "SSD SATA 960 ГБ – 1 ТБ 2.5\"",
+   "short": "SSD 1 ТБ",
+   "cap_gb": 1000,
+   "new": {
+    "min": 3556,
+    "where": "Яндекс Маркет",
+    "conf": "low",
+    "typ": [
+     5500,
+     9000
+    ],
+    "note": "Digma Run S9 1 ТБ по акции с картой дешевле 512 ГБ — аномалия акции. Бюджетные 1 ТБ обычно 5,5–6 тыс. ₽; премиум (Samsung 870 EVO) — 29–32 тыс. ₽.",
+    "offers": [
+     {
+      "market": "Яндекс Маркет",
+      "title": "Digma Run S9 1 ТБ SATA III",
+      "price_rub": 3556,
+      "conf": "low",
+      "note": "с картой Яндекс Пэй, акция",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "Российские площадки",
+      "title": "Netac N600S / Apacer AS350 1 ТБ SATA",
+      "price_rub": 5600,
+      "conf": "med",
+      "note": "бюджетные бренды",
+      "url": ""
+     },
+     {
+      "market": "DNS",
+      "title": "Crucial BX500 1 ТБ 2.5\" SATA",
+      "price_rub": 11499,
+      "conf": "med",
+      "note": "",
+      "url": "dns-shop.ru"
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "Samsung 870 EVO 1 ТБ MZ-77E1T0BW",
+      "price_rub": 29605,
+      "conf": "med",
+      "note": "премиум, с картой",
+      "url": "market.yandex.ru"
+     }
+    ]
+   },
+   "used": {
+    "min": 3200,
+    "where": "Авито / вторичный рынок",
+    "conf": "med",
+    "typ": [
+     3500,
+     6000
+    ],
+    "note": "Оценка: б/у SSD 1 ТБ ~45–55 % от розницы бюджетных моделей.",
+    "offers": [
+     {
+      "market": "Авито (оценка)",
+      "title": "SSD 1 ТБ б/у, SMART в норме",
+      "price_rub": 3500,
+      "conf": "med",
+      "note": "оценка по дисконту к рознице",
+      "url": ""
+     }
+    ]
+   },
+   "flags": []
+  },
+  {
+   "key": "SSD-2000",
+   "cat": "SSD",
+   "label": "SSD SATA 2 ТБ 2.5\"",
+   "short": "SSD 2 ТБ",
+   "cap_gb": 2000,
+   "new": {
+    "min": 14343,
+    "where": "Яндекс Маркет",
+    "conf": "med",
+    "typ": [
+     12000,
+     17000
+    ],
+    "note": "Samsung 870 QVO 2 ТБ — самая ходовая 2 ТБ SATA. Бюджетные бренды могут быть немного дешевле.",
+    "offers": [
+     {
+      "market": "Яндекс Маркет",
+      "title": "Samsung 870 QVO 2 ТБ MZ-77Q2T0BW",
+      "price_rub": 14343,
+      "conf": "med",
+      "note": "минимум в выдаче",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "online-samsung.ru",
+      "title": "Samsung 870 QVO 2 ТБ MZ-77Q2T0BW",
+      "price_rub": 16590,
+      "conf": "med",
+      "note": "",
+      "url": "online-samsung.ru"
+     }
+    ]
+   },
+   "used": {
+    "min": 6500,
+    "where": "Авито / вторичный рынок",
+    "conf": "low",
+    "typ": [
+     6800,
+     9500
+    ],
+    "note": "Оценка: б/у SSD 2 ТБ ~45–55 % от розницы.",
+    "offers": [
+     {
+      "market": "Авито (оценка)",
+      "title": "SSD 2 ТБ б/у, SMART в норме",
+      "price_rub": 7000,
+      "conf": "low",
+      "note": "оценка по дисконту к рознице",
+      "url": ""
+     }
+    ]
+   },
+   "flags": []
+  },
+  {
+   "key": "HDD-1000",
+   "cat": "HDD",
+   "label": "Жёсткий диск HDD 1 ТБ 3.5\"",
+   "short": "HDD 1 ТБ",
+   "cap_gb": 1000,
+   "new": {
+    "min": 2141,
+    "where": "Яндекс Маркет",
+    "conf": "low",
+    "typ": [
+     2100,
+     6600
+    ],
+    "note": "Маркетплейсы дают WD Blue/Seagate 1 ТБ от 2,1–2,6 тыс. ₽ (нижние 'от', часть — 5400 rpm/остатки). Отраслевые обзоры 2026 сообщают о росте 1 ТБ до 10 тыс. ₽+ — расхождение отмечено.",
+    "offers": [
+     {
+      "market": "Яндекс Маркет",
+      "title": "WD Blue WD10EZRZ 1 ТБ 3.5\" 5400",
+      "price_rub": 2141,
+      "conf": "low",
+      "note": "от, возможно остатки",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "WD Blue WD10EZEX 1 ТБ 3.5\" 7200",
+      "price_rub": 2321,
+      "conf": "low",
+      "note": "от",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "Seagate Barracuda ST1000DM010 1 ТБ 3.5\"",
+      "price_rub": 2561,
+      "conf": "low",
+      "note": "от",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "torg-pc.ru",
+      "title": "HDD 1 ТБ 3.5\" 7200 (сборка)",
+      "price_rub": 6577,
+      "conf": "med",
+      "note": "рыночная розница",
+      "url": "torg-pc.ru"
+     }
+    ]
+   },
+   "used": {
+    "min": 1500,
+    "where": "Авито / вторичный рынок",
+    "conf": "low",
+    "typ": [
+     1600,
+     3000
+    ],
+    "note": "Оценка: б/у HDD 1 ТБ ~40–55 % от розницы. Проверять SMART (наработка, переназначенные сектора).",
+    "offers": [
+     {
+      "market": "Авито (оценка)",
+      "title": "HDD 1 ТБ 3.5\" б/у, SMART в норме",
+      "price_rub": 1800,
+      "conf": "low",
+      "note": "оценка по дисконту к рознице",
+      "url": ""
+     }
+    ]
+   },
+   "flags": []
+  },
+  {
+   "key": "HDD-2000",
+   "cat": "HDD",
+   "label": "Жёсткий диск HDD 2 ТБ 3.5\"",
+   "short": "HDD 2 ТБ",
+   "cap_gb": 2000,
+   "new": {
+    "min": 3809,
+    "where": "Яндекс Маркет",
+    "conf": "low",
+    "typ": [
+     6700,
+     15000
+    ],
+    "note": "Seagate IronWolf 2 ТБ мелькает от 3,8 тыс. ₽ (нижняя граница), рыночная розница 2 ТБ — 6,7–15 тыс. ₽ (WD Blue, Toshiba).",
+    "offers": [
+     {
+      "market": "Яндекс Маркет",
+      "title": "Seagate IronWolf ST2000VN004 2 ТБ",
+      "price_rub": 3809,
+      "conf": "low",
+      "note": "нижняя граница",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "torg-pc.ru",
+      "title": "HDD 2 ТБ 3.5\" 7200 (сборка)",
+      "price_rub": 6729,
+      "conf": "med",
+      "note": "рыночная розница",
+      "url": "torg-pc.ru"
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "Toshiba DT02-V DT02ABA200V 2 ТБ",
+      "price_rub": 14550,
+      "conf": "med",
+      "note": "",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "WD Blue WD20EARZ 2 ТБ",
+      "price_rub": 15060,
+      "conf": "med",
+      "note": "",
+      "url": "market.yandex.ru"
+     }
+    ]
+   },
+   "used": {
+    "min": 2800,
+    "where": "Авито / вторичный рынок",
+    "conf": "low",
+    "typ": [
+     3000,
+     5500
+    ],
+    "note": "Оценка: б/у HDD 2 ТБ ~40–55 % от розницы.",
+    "offers": [
+     {
+      "market": "Авито (оценка)",
+      "title": "HDD 2 ТБ 3.5\" б/у, SMART в норме",
+      "price_rub": 3200,
+      "conf": "low",
+      "note": "оценка по дисконту к рознице",
+      "url": ""
+     }
+    ]
+   },
+   "flags": []
+  },
+  {
+   "key": "HDD-3000",
+   "cat": "HDD",
+   "label": "Жёсткий диск HDD 3 ТБ 3.5\"",
+   "short": "HDD 3 ТБ",
+   "cap_gb": 3000,
+   "new": {
+    "min": 6461,
+    "where": "агрегатор Price.ru",
+    "conf": "med",
+    "typ": [
+     6500,
+     14000
+    ],
+    "note": "3 ТБ — переходный объём, ассортимент тоньше. Toshiba Deskstar/P300 3 ТБ.",
+    "offers": [
+     {
+      "market": "Price.ru",
+      "title": "HDD 3 ТБ 3.5\" (минимум в каталоге)",
+      "price_rub": 6461,
+      "conf": "med",
+      "note": "от",
+      "url": "price.ru"
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "Toshiba Deskstar DT01ACA300 3 ТБ",
+      "price_rub": 13685,
+      "conf": "med",
+      "note": "",
+      "url": "market.yandex.ru"
+     }
+    ]
+   },
+   "used": {
+    "min": 3500,
+    "where": "Авито / вторичный рынок",
+    "conf": "low",
+    "typ": [
+     3600,
+     6500
+    ],
+    "note": "Оценка: б/у HDD 3 ТБ ~45–55 % от розницы.",
+    "offers": [
+     {
+      "market": "Авито (оценка)",
+      "title": "HDD 3 ТБ 3.5\" б/у, SMART в норме",
+      "price_rub": 3800,
+      "conf": "low",
+      "note": "оценка по дисконту к рознице",
+      "url": ""
+     }
+    ]
+   },
+   "flags": []
+  },
+  {
+   "key": "HDD-4000",
+   "cat": "HDD",
+   "label": "Жёсткий диск HDD 4 ТБ 3.5\"",
+   "short": "HDD 4 ТБ",
+   "cap_gb": 4000,
+   "new": {
+    "min": 4639,
+    "where": "Яндекс Маркет",
+    "conf": "low",
+    "typ": [
+     8000,
+     14000
+    ],
+    "note": "Seagate Barracuda ST4000DM004 мелькает от 4,6 тыс. ₽ (нижняя граница); рыночная розница 4 ТБ — 8–14 тыс. ₽. 2–8 ТБ дорожают быстрее всего (скупают ЦОД).",
+    "offers": [
+     {
+      "market": "Яндекс Маркет",
+      "title": "Seagate Barracuda ST4000DM004 4 ТБ",
+      "price_rub": 4639,
+      "conf": "low",
+      "note": "нижняя граница",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "Регард",
+      "title": "WD Blue WD40EZAX 4 ТБ 5400",
+      "price_rub": 9990,
+      "conf": "med",
+      "note": "",
+      "url": "regard.ru"
+     },
+     {
+      "market": "rusmarta.ru",
+      "title": "Seagate Barracuda 4 ТБ (refurbished)",
+      "price_rub": 7500,
+      "conf": "low",
+      "note": "восстановленный",
+      "url": "rusmarta.ru"
+     }
+    ]
+   },
+   "used": {
+    "min": 4000,
+    "where": "Авито / вторичный рынок",
+    "conf": "low",
+    "typ": [
+     4200,
+     7500
+    ],
+    "note": "Оценка: б/у HDD 4 ТБ ~45–55 % от розницы.",
+    "offers": [
+     {
+      "market": "Авито (оценка)",
+      "title": "HDD 4 ТБ 3.5\" б/у, SMART в норме",
+      "price_rub": 4500,
+      "conf": "low",
+      "note": "оценка по дисконту к рознице",
+      "url": ""
+     }
+    ]
+   },
+   "flags": []
+  },
+  {
+   "key": "HDD-6000",
+   "cat": "HDD",
+   "label": "Жёсткий диск HDD 6 ТБ 3.5\"",
+   "short": "HDD 6 ТБ",
+   "cap_gb": 6000,
+   "new": {
+    "min": 16443,
+    "where": "torg-pc.ru",
+    "conf": "med",
+    "typ": [
+     16000,
+     29000
+    ],
+    "note": "6 ТБ CMR — уже 'ёмкий' диск, спрос ЦОД держит цену высокой.",
+    "offers": [
+     {
+      "market": "torg-pc.ru",
+      "title": "HDD 6 ТБ 3.5\" 7200 (сборка)",
+      "price_rub": 16443,
+      "conf": "med",
+      "note": "рыночная розница",
+      "url": "torg-pc.ru"
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "Seagate SkyHawk ST6000VX009 6 ТБ",
+      "price_rub": 25166,
+      "conf": "med",
+      "note": "с картой Яндекс Пэй",
+      "url": "market.yandex.ru"
+     },
+     {
+      "market": "Яндекс Маркет",
+      "title": "Toshiba MG08 6 ТБ Enterprise",
+      "price_rub": 29445,
+      "conf": "med",
+      "note": "с картой Яндекс Пэй",
+      "url": "market.yandex.ru"
+     }
+    ]
+   },
+   "used": {
+    "min": 9000,
+    "where": "Авито / вторичный рынок",
+    "conf": "low",
+    "typ": [
+     9500,
+     15000
+    ],
+    "note": "Оценка: б/у HDD 6 ТБ ~45–60 % от розницы; ёмкие диски на вторичке дефицитны.",
+    "offers": [
+     {
+      "market": "Авито (оценка)",
+      "title": "HDD 6 ТБ 3.5\" б/у, SMART в норме",
+      "price_rub": 10000,
+      "conf": "low",
+      "note": "оценка по дисконту к рознице",
+      "url": ""
+     }
+    ]
+   },
+   "flags": []
+  }
+ ],
+ "warnings": [
+  "HDD 1 ТБ: маркетплейсы показывают 'от 2,1–2,6 тыс. ₽', а отраслевые обзоры 2026 г. пишут о росте до 10 тыс. ₽+. Низкие цены — это анкеры 'от' (часто остатки/5400 rpm); реальная розница ходовых моделей ближе к 6–10 тыс. ₽.",
+  "SSD 1 ТБ (3 556 ₽ Digma с картой) оказался дешевле SSD 512 ГБ (5 922 ₽) — это разовая акция с картой Яндекс Пэй, а не устойчивая цена. Ориентируйтесь на типичный диапазон 5,5–9 тыс. ₽.",
+  "DDR4 16/32 ГБ: разброс огромный (16 ГБ от 10,5 до 24,5 тыс. ₽). Причина — дефицит DRAM и сворачивание выпуска DDR4; цены меняются буквально еженедельно, часть предложений — киты 2x8/2x16, а не одиночные модули.",
+  "Цены б/у по всем позициям — оценка по документированному дисконту к рознице и агрегированной статистике Авито, а не прямые листинги: WebSearch из среды не отдаёт карточки Авито, а прямой доступ к сайту закрыт сетевой политикой.",
+  "Часть минимумов новой розницы указана 'с картой' площадки (Яндекс Пэй, Ozon Карта) — без карты цена выше на 3–10 %."
+ ]
+}

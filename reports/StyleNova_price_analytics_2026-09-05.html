@@ -1,0 +1,439 @@
+<!doctype html><html lang='ru'><head><meta charset='utf-8'><title>Аналитика цен на комплектующие — StyleNova</title><style>
+* { box-sizing: border-box; }
+body { font-family: "Liberation Sans","DejaVu Sans",Arial,sans-serif; font-size:10pt; color:#0b0b0b; margin:0; line-height:1.42; }
+h1 { font-size:23pt; margin:0 0 6px; line-height:1.15; }
+h2 { font-size:15pt; margin:0 0 10px; padding-bottom:4px; border-bottom:1px solid #c3c2b7; }
+h3 { font-size:12pt; margin:16px 0 6px; }
+h4 { font-size:10pt; margin:11px 0 4px; color:#52514e; }
+p { margin:0 0 8px; }
+.muted{color:#898781;} .sec{color:#52514e;} .small{font-size:8.5pt;}
+.cover{padding-top:56px;}
+.cover .kicker{text-transform:uppercase;letter-spacing:.08em;font-size:9pt;color:#52514e;margin-bottom:14px;}
+.cover .sub{font-size:12.5pt;color:#52514e;margin:10px 0 26px;}
+.cover .meta{border-top:1px solid #e1e0d9;padding-top:12px;font-size:9.5pt;color:#52514e;}
+.cover .meta div{margin-bottom:5px;}
+.page{break-before:page;}
+.avoid{break-inside:avoid;}
+table{width:100%;border-collapse:collapse;font-size:8.8pt;margin:6px 0 12px;}
+th,td{border-bottom:1px solid #e1e0d9;padding:4px 6px;text-align:left;vertical-align:top;}
+th{background:#f4f4f1;color:#52514e;font-weight:700;font-size:8.3pt;border-bottom:1px solid #c3c2b7;}
+tr{break-inside:avoid;}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;}
+td.min{font-weight:700;}
+tr.hl td{background:#eaf2fc;}
+.badge{display:inline-block;font-size:7.6pt;padding:1px 6px;border-radius:9px;white-space:nowrap;}
+.badge.ok{background:#e3f3e3;color:#0a5a0a;} .badge.warn{background:#fff1dc;color:#7a4b00;} .badge.none{background:#eee;color:#52514e;}
+a{color:#1c5cab;text-decoration:none;}
+.dom{color:#898781;font-size:7.6pt;}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:10px 0 14px;}
+.tile{border:1px solid #e1e0d9;border-radius:8px;padding:9px 11px;break-inside:avoid;}
+.tile .lbl{font-size:8.3pt;color:#52514e;}
+.tile .val{font-size:16pt;font-weight:700;margin:1px 0;}
+.tile .val.u{font-size:12pt;font-weight:600;color:#7a3d1a;}
+.tile .src{font-size:7.8pt;color:#898781;}
+.callout{border-left:3px solid #2a78d6;background:#f6f9fd;padding:8px 12px;margin:10px 0 14px;}
+.callout.warn{border-left-color:#eda100;background:#fffaf0;}
+.chart{margin:6px 0 14px;break-inside:avoid;}
+ul,ol{margin:4px 0 10px 18px;padding:0;} li{margin-bottom:4px;}
+.sources li{font-size:8pt;word-break:break-all;}
+.cols2{columns:2;column-gap:22px;}
+.note{font-size:8.6pt;color:#52514e;background:#f8f8f6;padding:6px 10px;border-radius:6px;margin:4px 0 10px;}
+</style></head><body>
+<section class="cover">
+<div class="kicker">StyleNova · аналитика рынка комплектующих</div>
+<h1>Цены на DDR4, SSD SATA и HDD: новое и б/у</h1>
+<div class="sub">Срез по рынкам России на 5 сентября 2026. Минимальные цены новой розницы и вторичного рынка, типичные диапазоны, удельная стоимость и ориентиры для закупки и продажи.</div>
+<div class="meta">
+<div><b>Позиции (14):</b> DDR4 4 / 8 / 16 / 32 ГБ · SSD SATA 128 / 240 / 512 ГБ, 1 / 2 ТБ · HDD 3.5" 1 / 2 / 3 / 4 / 6 ТБ — каждая в состоянии «новое» и «б/у».</div>
+<div><b>Площадки:</b> DNS, E-katalog, Hardprice, NIX, Ozon, Price.ru, Wildberries, online-samsung.ru, rusmarta.ru, torg-pc.ru, Регард, Ситилинк, Эльдорадо, Яндекс Маркет.</div>
+<div><b>Курс для пересчёта:</b> USD 86.5857 ₽, EUR 100.5693 ₽ (Банк России, 2026-09-05).</div>
+<div><b>Метод:</b> сбор цен из открытых поисковых сниппетов и карточек площадок, сведение по позициям, оценка минимумов и диапазонов. Прямой доступ к сайтам площадок из среды закрыт сетевой политикой, поэтому цена бралась только там, где явно указана в выдаче.</div>
+</div>
+<div class="callout warn" style="margin-top:24px"><b>Главное про рынок сейчас.</b> 2026 год — «memory supercycle»: из-за бума ИИ дефицитны и дорожают DRAM, NAND и HDD одновременно. За год память подорожала в разы, HDD 1–8 ТБ — на десятки процентов. Поэтому цены крайне волатильны: снипеты и карточки меняются еженедельно, часть предложений идёт «с картой» площадки или это киты из нескольких модулей. Перед закупкой партии сверяйте с живой карточкой по ссылке.</div>
+</section>
+<section class="page"><h2>1. Итог: самые низкие цены по каждой позиции</h2>
+<p class="sec">Минимальная цена за 1 шт. в целевом форм-факторе (DIMM для памяти, 2.5" SATA для SSD, 3.5" для HDD). Уверенность отражает, насколько цена подтверждена конкретной карточкой (высокая/средняя) или является оценкой по рынку (низкая). Экономия — насколько минимум б/у ниже минимума новой розницы.</p>
+<table><thead><tr><th>Позиция</th><th class="num">Мин. новое</th><th>Где</th><th>Уверен.</th><th class="num">Мин. б/у</th><th>Где</th><th>Уверен.</th><th class="num">Экономия</th></tr></thead><tbody>
+<tr><td colspan="8" style="background:#f4f4f1;font-weight:700;color:#52514e">Оперативная память DDR4</td></tr>
+<tr><td><b>DDR4 4 ГБ</b></td><td class="num min">990 ₽</td><td>Ситилинк</td><td><span class="badge warn">средняя</span></td><td class="num min">650 ₽</td><td>Авито / вторичный рынок</td><td><span class="badge none">низкая</span></td><td class="num">−34 %</td></tr>
+<tr><td><b>DDR4 8 ГБ</b></td><td class="num min">4 243 ₽</td><td>Яндекс Маркет</td><td><span class="badge warn">средняя</span></td><td class="num min">2 400 ₽</td><td>Авито / вторичный рынок</td><td><span class="badge warn">средняя</span></td><td class="num">−43 %</td></tr>
+<tr><td><b>DDR4 16 ГБ</b></td><td class="num min">10 551 ₽</td><td>Яндекс Маркет</td><td><span class="badge warn">средняя</span></td><td class="num min">6 000 ₽</td><td>Авито / вторичный рынок</td><td><span class="badge none">низкая</span></td><td class="num">−43 %</td></tr>
+<tr><td><b>DDR4 32 ГБ</b></td><td class="num min">17 463 ₽</td><td>Российские маркетплейсы</td><td><span class="badge none">низкая</span></td><td class="num min">11 000 ₽</td><td>Авито / вторичный рынок</td><td><span class="badge none">низкая</span></td><td class="num">−37 %</td></tr>
+<tr><td colspan="8" style="background:#f4f4f1;font-weight:700;color:#52514e">SSD SATA 2.5&quot;</td></tr>
+<tr><td><b>SSD 128 ГБ</b></td><td class="num min">1 200 ₽</td><td>агрегатор Hardprice</td><td><span class="badge warn">средняя</span></td><td class="num min">700 ₽</td><td>Авито / вторичный рынок</td><td><span class="badge none">низкая</span></td><td class="num">−42 %</td></tr>
+<tr><td><b>SSD 240 ГБ</b></td><td class="num min">2 490 ₽</td><td>Российские маркетплейсы</td><td><span class="badge none">низкая</span></td><td class="num min">1 300 ₽</td><td>Авито / вторичный рынок</td><td><span class="badge none">низкая</span></td><td class="num">−48 %</td></tr>
+<tr><td><b>SSD 512 ГБ</b></td><td class="num min">5 922 ₽</td><td>Яндекс Маркет</td><td><span class="badge warn">средняя</span></td><td class="num min">2 800 ₽</td><td>Авито / вторичный рынок</td><td><span class="badge warn">средняя</span></td><td class="num">−53 %</td></tr>
+<tr><td><b>SSD 1 ТБ</b></td><td class="num min">3 556 ₽</td><td>Яндекс Маркет</td><td><span class="badge none">низкая</span></td><td class="num min">3 200 ₽</td><td>Авито / вторичный рынок</td><td><span class="badge warn">средняя</span></td><td class="num">−10 %</td></tr>
+<tr><td><b>SSD 2 ТБ</b></td><td class="num min">14 343 ₽</td><td>Яндекс Маркет</td><td><span class="badge warn">средняя</span></td><td class="num min">6 500 ₽</td><td>Авито / вторичный рынок</td><td><span class="badge none">низкая</span></td><td class="num">−55 %</td></tr>
+<tr><td colspan="8" style="background:#f4f4f1;font-weight:700;color:#52514e">Жёсткие диски HDD 3.5&quot;</td></tr>
+<tr><td><b>HDD 1 ТБ</b></td><td class="num min">2 141 ₽</td><td>Яндекс Маркет</td><td><span class="badge none">низкая</span></td><td class="num min">1 500 ₽</td><td>Авито / вторичный рынок</td><td><span class="badge none">низкая</span></td><td class="num">−30 %</td></tr>
+<tr><td><b>HDD 2 ТБ</b></td><td class="num min">3 809 ₽</td><td>Яндекс Маркет</td><td><span class="badge none">низкая</span></td><td class="num min">2 800 ₽</td><td>Авито / вторичный рынок</td><td><span class="badge none">низкая</span></td><td class="num">−26 %</td></tr>
+<tr><td><b>HDD 3 ТБ</b></td><td class="num min">6 461 ₽</td><td>агрегатор Price.ru</td><td><span class="badge warn">средняя</span></td><td class="num min">3 500 ₽</td><td>Авито / вторичный рынок</td><td><span class="badge none">низкая</span></td><td class="num">−46 %</td></tr>
+<tr><td><b>HDD 4 ТБ</b></td><td class="num min">4 639 ₽</td><td>Яндекс Маркет</td><td><span class="badge none">низкая</span></td><td class="num min">4 000 ₽</td><td>Авито / вторичный рынок</td><td><span class="badge none">низкая</span></td><td class="num">−14 %</td></tr>
+<tr><td><b>HDD 6 ТБ</b></td><td class="num min">16 443 ₽</td><td>torg-pc.ru</td><td><span class="badge warn">средняя</span></td><td class="num min">9 000 ₽</td><td>Авито / вторичный рынок</td><td><span class="badge none">низкая</span></td><td class="num">−45 %</td></tr>
+</tbody></table>
+<div class="callout"><b>Самая низкая цена по всем параметрам.</b> Новое: <b>DDR4 4 ГБ — 990 ₽</b> (Ситилинк). Б/у: <b>DDR4 4 ГБ — 650 ₽</b> (оценка вторичного рынка). Самая выгодная ёмкость среди нового — <b>HDD 4 ТБ: 1.2 ₽ за ГБ</b>.</div>
+<h3>Чёткий результат по рознице: где дешевле всего купить</h3>
+<div class="tiles">
+<div class="tile">
+<div class="lbl">DDR4 4 ГБ — новое, минимум</div>
+<div class="val">990 ₽</div>
+<div class="src">Ситилинк · Kingmax KM-LD4-2666-4GS DDR4 4 ГБ 2666</div>
+<div class="lbl" style="margin-top:5px">б/у, оценка минимума</div><div class="val u">650 ₽</div>
+</div>
+<div class="tile">
+<div class="lbl">DDR4 8 ГБ — новое, минимум</div>
+<div class="val">4 243 ₽</div>
+<div class="src">Яндекс Маркет · Digma DDR4 8 ГБ 2666 DIMM</div>
+<div class="lbl" style="margin-top:5px">б/у, оценка минимума</div><div class="val u">2 400 ₽</div>
+</div>
+<div class="tile">
+<div class="lbl">DDR4 16 ГБ — новое, минимум</div>
+<div class="val">10 551 ₽</div>
+<div class="src">Яндекс Маркет · Kingspec KS3200D4P12016G DDR4 16 ГБ 3200</div>
+<div class="lbl" style="margin-top:5px">б/у, оценка минимума</div><div class="val u">6 000 ₽</div>
+</div>
+<div class="tile">
+<div class="lbl">DDR4 32 ГБ — новое, минимум</div>
+<div class="val">17 463 ₽</div>
+<div class="src">Российские маркетплейсы · DDR4 32 ГБ (модуль)</div>
+<div class="lbl" style="margin-top:5px">б/у, оценка минимума</div><div class="val u">11 000 ₽</div>
+</div>
+<div class="tile">
+<div class="lbl">SSD 128 ГБ — новое, минимум</div>
+<div class="val">1 200 ₽</div>
+<div class="src">агрегатор Hardprice · Kingston A400 SA400S37/120G 120 ГБ 2.5&quot; SA</div>
+<div class="lbl" style="margin-top:5px">б/у, оценка минимума</div><div class="val u">700 ₽</div>
+</div>
+<div class="tile">
+<div class="lbl">SSD 240 ГБ — новое, минимум</div>
+<div class="val">2 490 ₽</div>
+<div class="src">Российские маркетплейсы · SSD SATA 240 ГБ бюджетный бренд</div>
+<div class="lbl" style="margin-top:5px">б/у, оценка минимума</div><div class="val u">1 300 ₽</div>
+</div>
+<div class="tile">
+<div class="lbl">SSD 512 ГБ — новое, минимум</div>
+<div class="val">5 922 ₽</div>
+<div class="src">Яндекс Маркет · QOPP 512 ГБ SATA III 2.5&quot;</div>
+<div class="lbl" style="margin-top:5px">б/у, оценка минимума</div><div class="val u">2 800 ₽</div>
+</div>
+<div class="tile">
+<div class="lbl">SSD 1 ТБ — новое, минимум</div>
+<div class="val">3 556 ₽</div>
+<div class="src">Яндекс Маркет · Digma Run S9 1 ТБ SATA III</div>
+<div class="lbl" style="margin-top:5px">б/у, оценка минимума</div><div class="val u">3 200 ₽</div>
+</div>
+<div class="tile">
+<div class="lbl">SSD 2 ТБ — новое, минимум</div>
+<div class="val">14 343 ₽</div>
+<div class="src">Яндекс Маркет · Samsung 870 QVO 2 ТБ MZ-77Q2T0BW</div>
+<div class="lbl" style="margin-top:5px">б/у, оценка минимума</div><div class="val u">6 500 ₽</div>
+</div>
+<div class="tile">
+<div class="lbl">HDD 1 ТБ — новое, минимум</div>
+<div class="val">2 141 ₽</div>
+<div class="src">Яндекс Маркет · WD Blue WD10EZRZ 1 ТБ 3.5&quot; 5400</div>
+<div class="lbl" style="margin-top:5px">б/у, оценка минимума</div><div class="val u">1 500 ₽</div>
+</div>
+<div class="tile">
+<div class="lbl">HDD 2 ТБ — новое, минимум</div>
+<div class="val">3 809 ₽</div>
+<div class="src">Яндекс Маркет · Seagate IronWolf ST2000VN004 2 ТБ</div>
+<div class="lbl" style="margin-top:5px">б/у, оценка минимума</div><div class="val u">2 800 ₽</div>
+</div>
+<div class="tile">
+<div class="lbl">HDD 3 ТБ — новое, минимум</div>
+<div class="val">6 461 ₽</div>
+<div class="src">агрегатор Price.ru · HDD 3 ТБ 3.5&quot; (минимум в каталоге)</div>
+<div class="lbl" style="margin-top:5px">б/у, оценка минимума</div><div class="val u">3 500 ₽</div>
+</div>
+<div class="tile">
+<div class="lbl">HDD 4 ТБ — новое, минимум</div>
+<div class="val">4 639 ₽</div>
+<div class="src">Яндекс Маркет · Seagate Barracuda ST4000DM004 4 ТБ</div>
+<div class="lbl" style="margin-top:5px">б/у, оценка минимума</div><div class="val u">4 000 ₽</div>
+</div>
+<div class="tile">
+<div class="lbl">HDD 6 ТБ — новое, минимум</div>
+<div class="val">16 443 ₽</div>
+<div class="src">torg-pc.ru · HDD 6 ТБ 3.5&quot; 7200 (сборка)</div>
+<div class="lbl" style="margin-top:5px">б/у, оценка минимума</div><div class="val u">9 000 ₽</div>
+</div>
+</div></section>
+<section class="page"><h2>2. Диапазоны, удельная цена и ориентиры</h2>
+<p class="sec">Типичный диапазон — рабочая вилка розницы/вторички по позиции на сентябрь 2026 (без единичных выбросов). ₽/ГБ считается по минимуму. Для магазина StyleNova ориентир закупки — минимум б/у, ориентир цены продажи — верх диапазона б/у или низ новой розницы.</p>
+<table><thead><tr><th>Позиция</th><th>Диапазон, новое</th><th>Диапазон, б/у</th><th class="num">Новое, ₽/ГБ</th><th class="num">Б/у, ₽/ГБ</th></tr></thead><tbody>
+<tr><td colspan="5" style="background:#f4f4f1;font-weight:700;color:#52514e">Оперативная память DDR4</td></tr>
+<tr><td><b>DDR4 4 ГБ</b></td><td>990 ₽ – 2 200 ₽</td><td>650 ₽ – 1 300 ₽</td><td class="num">247.5</td><td class="num">162.5</td></tr>
+<tr><td><b>DDR4 8 ГБ</b></td><td>4 243 ₽ – 5 800 ₽</td><td>2 500 ₽ – 3 900 ₽</td><td class="num">530.4</td><td class="num">300.0</td></tr>
+<tr><td><b>DDR4 16 ГБ</b></td><td>10 500 ₽ – 15 000 ₽</td><td>6 000 ₽ – 9 000 ₽</td><td class="num">659.4</td><td class="num">375.0</td></tr>
+<tr><td><b>DDR4 32 ГБ</b></td><td>17 000 ₽ – 29 000 ₽</td><td>11 000 ₽ – 17 000 ₽</td><td class="num">545.7</td><td class="num">343.8</td></tr>
+<tr><td colspan="5" style="background:#f4f4f1;font-weight:700;color:#52514e">SSD SATA 2.5&quot;</td></tr>
+<tr><td><b>SSD 128 ГБ</b></td><td>1 200 ₽ – 2 500 ₽</td><td>700 ₽ – 1 400 ₽</td><td class="num">9.4</td><td class="num">5.5</td></tr>
+<tr><td><b>SSD 240 ГБ</b></td><td>2 500 ₽ – 5 000 ₽</td><td>1 400 ₽ – 2 600 ₽</td><td class="num">10.4</td><td class="num">5.4</td></tr>
+<tr><td><b>SSD 512 ГБ</b></td><td>6 000 ₽ – 9 000 ₽</td><td>2 900 ₽ – 4 500 ₽</td><td class="num">11.6</td><td class="num">5.5</td></tr>
+<tr><td><b>SSD 1 ТБ</b></td><td>5 500 ₽ – 9 000 ₽</td><td>3 500 ₽ – 6 000 ₽</td><td class="num">3.6</td><td class="num">3.2</td></tr>
+<tr><td><b>SSD 2 ТБ</b></td><td>12 000 ₽ – 17 000 ₽</td><td>6 800 ₽ – 9 500 ₽</td><td class="num">7.2</td><td class="num">3.2</td></tr>
+<tr><td colspan="5" style="background:#f4f4f1;font-weight:700;color:#52514e">Жёсткие диски HDD 3.5&quot;</td></tr>
+<tr><td><b>HDD 1 ТБ</b></td><td>2 100 ₽ – 6 600 ₽</td><td>1 600 ₽ – 3 000 ₽</td><td class="num">2.1</td><td class="num">1.5</td></tr>
+<tr><td><b>HDD 2 ТБ</b></td><td>6 700 ₽ – 15 000 ₽</td><td>3 000 ₽ – 5 500 ₽</td><td class="num">1.9</td><td class="num">1.4</td></tr>
+<tr><td><b>HDD 3 ТБ</b></td><td>6 500 ₽ – 14 000 ₽</td><td>3 600 ₽ – 6 500 ₽</td><td class="num">2.2</td><td class="num">1.2</td></tr>
+<tr><td><b>HDD 4 ТБ</b></td><td>8 000 ₽ – 14 000 ₽</td><td>4 200 ₽ – 7 500 ₽</td><td class="num">1.2</td><td class="num">1.0</td></tr>
+<tr><td><b>HDD 6 ТБ</b></td><td>16 000 ₽ – 29 000 ₽</td><td>9 500 ₽ – 15 000 ₽</td><td class="num">2.7</td><td class="num">1.5</td></tr>
+</tbody></table>
+<div class="chart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 268" width="720" height="268" font-family="Liberation Sans, DejaVu Sans, sans-serif"><text x="0" y="16" font-size="13" font-weight="700" fill="#0b0b0b">Оперативная память DDR4: минимальная цена за 1 шт., ₽</text><text x="0" y="32" font-size="10" fill="#52514e">Синие — новая розница; оранжевые — оценка вторичного рынка</text><rect x="400" y="8" width="10" height="10" rx="2" fill="#2a78d6"/><text x="414" y="17" font-size="10" fill="#52514e">Новое, минимум</text><rect x="520" y="8" width="10" height="10" rx="2" fill="#eb6834"/><text x="534" y="17" font-size="10" fill="#52514e">Б/у, оценка</text><line x1="118.0" y1="50" x2="118.0" y2="246" stroke="#e1e0d9" stroke-width="1"/><text x="118.0" y="260" font-size="9" fill="#898781" text-anchor="middle">0</text><line x1="251.0" y1="50" x2="251.0" y2="246" stroke="#e1e0d9" stroke-width="1"/><text x="251.0" y="260" font-size="9" fill="#898781" text-anchor="middle">5 тыс,</text><line x1="384.0" y1="50" x2="384.0" y2="246" stroke="#e1e0d9" stroke-width="1"/><text x="384.0" y="260" font-size="9" fill="#898781" text-anchor="middle">10 тыс,</text><line x1="517.0" y1="50" x2="517.0" y2="246" stroke="#e1e0d9" stroke-width="1"/><text x="517.0" y="260" font-size="9" fill="#898781" text-anchor="middle">15 тыс,</text><line x1="650.0" y1="50" x2="650.0" y2="246" stroke="#e1e0d9" stroke-width="1"/><text x="650.0" y="260" font-size="9" fill="#898781" text-anchor="middle">20 тыс,</text><line x1="118" y1="50" x2="118" y2="246" stroke="#c3c2b7" stroke-width="1"/><text x="110" y="76" font-size="10.5" fill="#0b0b0b" text-anchor="end">DDR4 4 ГБ</text><path d="M118.0,56.0 H140.3 Q144.3,56.0 144.3,60.0 V67.0 Q144.3,71.0 140.3,71.0 H118.0 Z" fill="#2a78d6"/><text x="149.3" y="68" font-size="9.5" font-weight="700" fill="#0b0b0b">990 ₽</text><path d="M118.0,73.0 H131.3 Q135.3,73.0 135.3,77.0 V84.0 Q135.3,88.0 131.3,88.0 H118.0 Z" fill="#eb6834"/><text x="140.3" y="85" font-size="9.5" font-weight="700" fill="#0b0b0b">650 ₽</text><text x="110" y="122" font-size="10.5" fill="#0b0b0b" text-anchor="end">DDR4 8 ГБ</text><path d="M118.0,102.0 H226.9 Q230.9,102.0 230.9,106.0 V113.0 Q230.9,117.0 226.9,117.0 H118.0 Z" fill="#2a78d6"/><text x="235.9" y="114" font-size="9.5" font-weight="700" fill="#0b0b0b">4 243 ₽</text><path d="M118.0,119.0 H177.8 Q181.8,119.0 181.8,123.0 V130.0 Q181.8,134.0 177.8,134.0 H118.0 Z" fill="#eb6834"/><text x="186.8" y="131" font-size="9.5" font-weight="700" fill="#0b0b0b">2 400 ₽</text><text x="110" y="168" font-size="10.5" fill="#0b0b0b" text-anchor="end">DDR4 16 ГБ</text><path d="M118.0,148.0 H394.7 Q398.7,148.0 398.7,152.0 V159.0 Q398.7,163.0 394.7,163.0 H118.0 Z" fill="#2a78d6"/><text x="403.7" y="160" font-size="9.5" font-weight="700" fill="#0b0b0b">10 551 ₽</text><path d="M118.0,165.0 H273.6 Q277.6,165.0 277.6,169.0 V176.0 Q277.6,180.0 273.6,180.0 H118.0 Z" fill="#eb6834"/><text x="282.6" y="177" font-size="9.5" font-weight="700" fill="#0b0b0b">6 000 ₽</text><text x="110" y="214" font-size="10.5" fill="#0b0b0b" text-anchor="end">DDR4 32 ГБ</text><path d="M118.0,194.0 H578.5 Q582.5,194.0 582.5,198.0 V205.0 Q582.5,209.0 578.5,209.0 H118.0 Z" fill="#2a78d6"/><text x="587.5" y="206" font-size="9.5" font-weight="700" fill="#0b0b0b">17 463 ₽</text><path d="M118.0,211.0 H406.6 Q410.6,211.0 410.6,215.0 V222.0 Q410.6,226.0 406.6,226.0 H118.0 Z" fill="#eb6834"/><text x="415.6" y="223" font-size="9.5" font-weight="700" fill="#0b0b0b">11 000 ₽</text></svg></div>
+<div class="chart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 314" width="720" height="314" font-family="Liberation Sans, DejaVu Sans, sans-serif"><text x="0" y="16" font-size="13" font-weight="700" fill="#0b0b0b">SSD SATA 2.5&quot;: минимальная цена за 1 шт., ₽</text><text x="0" y="32" font-size="10" fill="#52514e">Синие — новая розница; оранжевые — оценка вторичного рынка</text><rect x="400" y="8" width="10" height="10" rx="2" fill="#2a78d6"/><text x="414" y="17" font-size="10" fill="#52514e">Новое, минимум</text><rect x="520" y="8" width="10" height="10" rx="2" fill="#eb6834"/><text x="534" y="17" font-size="10" fill="#52514e">Б/у, оценка</text><line x1="118.0" y1="50" x2="118.0" y2="292" stroke="#e1e0d9" stroke-width="1"/><text x="118.0" y="306" font-size="9" fill="#898781" text-anchor="middle">0</text><line x1="251.0" y1="50" x2="251.0" y2="292" stroke="#e1e0d9" stroke-width="1"/><text x="251.0" y="306" font-size="9" fill="#898781" text-anchor="middle">5 тыс,</text><line x1="384.0" y1="50" x2="384.0" y2="292" stroke="#e1e0d9" stroke-width="1"/><text x="384.0" y="306" font-size="9" fill="#898781" text-anchor="middle">10 тыс,</text><line x1="517.0" y1="50" x2="517.0" y2="292" stroke="#e1e0d9" stroke-width="1"/><text x="517.0" y="306" font-size="9" fill="#898781" text-anchor="middle">15 тыс,</text><line x1="650.0" y1="50" x2="650.0" y2="292" stroke="#e1e0d9" stroke-width="1"/><text x="650.0" y="306" font-size="9" fill="#898781" text-anchor="middle">20 тыс,</text><line x1="118" y1="50" x2="118" y2="292" stroke="#c3c2b7" stroke-width="1"/><text x="110" y="76" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 128 ГБ</text><path d="M118.0,56.0 H145.9 Q149.9,56.0 149.9,60.0 V67.0 Q149.9,71.0 145.9,71.0 H118.0 Z" fill="#2a78d6"/><text x="154.9" y="68" font-size="9.5" font-weight="700" fill="#0b0b0b">1 200 ₽</text><path d="M118.0,73.0 H132.6 Q136.6,73.0 136.6,77.0 V84.0 Q136.6,88.0 132.6,88.0 H118.0 Z" fill="#eb6834"/><text x="141.6" y="85" font-size="9.5" font-weight="700" fill="#0b0b0b">700 ₽</text><text x="110" y="122" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 240 ГБ</text><path d="M118.0,102.0 H180.2 Q184.2,102.0 184.2,106.0 V113.0 Q184.2,117.0 180.2,117.0 H118.0 Z" fill="#2a78d6"/><text x="189.2" y="114" font-size="9.5" font-weight="700" fill="#0b0b0b">2 490 ₽</text><path d="M118.0,119.0 H148.6 Q152.6,119.0 152.6,123.0 V130.0 Q152.6,134.0 148.6,134.0 H118.0 Z" fill="#eb6834"/><text x="157.6" y="131" font-size="9.5" font-weight="700" fill="#0b0b0b">1 300 ₽</text><text x="110" y="168" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 512 ГБ</text><path d="M118.0,148.0 H271.5 Q275.5,148.0 275.5,152.0 V159.0 Q275.5,163.0 271.5,163.0 H118.0 Z" fill="#2a78d6"/><text x="280.5" y="160" font-size="9.5" font-weight="700" fill="#0b0b0b">5 922 ₽</text><path d="M118.0,165.0 H188.5 Q192.5,165.0 192.5,169.0 V176.0 Q192.5,180.0 188.5,180.0 H118.0 Z" fill="#eb6834"/><text x="197.5" y="177" font-size="9.5" font-weight="700" fill="#0b0b0b">2 800 ₽</text><text x="110" y="214" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 1 ТБ</text><path d="M118.0,194.0 H208.6 Q212.6,194.0 212.6,198.0 V205.0 Q212.6,209.0 208.6,209.0 H118.0 Z" fill="#2a78d6"/><text x="217.6" y="206" font-size="9.5" font-weight="700" fill="#0b0b0b">3 556 ₽</text><path d="M118.0,211.0 H199.1 Q203.1,211.0 203.1,215.0 V222.0 Q203.1,226.0 199.1,226.0 H118.0 Z" fill="#eb6834"/><text x="208.1" y="223" font-size="9.5" font-weight="700" fill="#0b0b0b">3 200 ₽</text><text x="110" y="260" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 2 ТБ</text><path d="M118.0,240.0 H495.5 Q499.5,240.0 499.5,244.0 V251.0 Q499.5,255.0 495.5,255.0 H118.0 Z" fill="#2a78d6"/><text x="504.5" y="252" font-size="9.5" font-weight="700" fill="#0b0b0b">14 343 ₽</text><path d="M118.0,257.0 H286.9 Q290.9,257.0 290.9,261.0 V268.0 Q290.9,272.0 286.9,272.0 H118.0 Z" fill="#eb6834"/><text x="295.9" y="269" font-size="9.5" font-weight="700" fill="#0b0b0b">6 500 ₽</text></svg></div>
+<div class="chart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 314" width="720" height="314" font-family="Liberation Sans, DejaVu Sans, sans-serif"><text x="0" y="16" font-size="13" font-weight="700" fill="#0b0b0b">Жёсткие диски HDD 3.5&quot;: минимальная цена за 1 шт., ₽</text><text x="0" y="32" font-size="10" fill="#52514e">Синие — новая розница; оранжевые — оценка вторичного рынка</text><rect x="400" y="8" width="10" height="10" rx="2" fill="#2a78d6"/><text x="414" y="17" font-size="10" fill="#52514e">Новое, минимум</text><rect x="520" y="8" width="10" height="10" rx="2" fill="#eb6834"/><text x="534" y="17" font-size="10" fill="#52514e">Б/у, оценка</text><line x1="118.0" y1="50" x2="118.0" y2="292" stroke="#e1e0d9" stroke-width="1"/><text x="118.0" y="306" font-size="9" fill="#898781" text-anchor="middle">0</text><line x1="251.0" y1="50" x2="251.0" y2="292" stroke="#e1e0d9" stroke-width="1"/><text x="251.0" y="306" font-size="9" fill="#898781" text-anchor="middle">5 тыс,</text><line x1="384.0" y1="50" x2="384.0" y2="292" stroke="#e1e0d9" stroke-width="1"/><text x="384.0" y="306" font-size="9" fill="#898781" text-anchor="middle">10 тыс,</text><line x1="517.0" y1="50" x2="517.0" y2="292" stroke="#e1e0d9" stroke-width="1"/><text x="517.0" y="306" font-size="9" fill="#898781" text-anchor="middle">15 тыс,</text><line x1="650.0" y1="50" x2="650.0" y2="292" stroke="#e1e0d9" stroke-width="1"/><text x="650.0" y="306" font-size="9" fill="#898781" text-anchor="middle">20 тыс,</text><line x1="118" y1="50" x2="118" y2="292" stroke="#c3c2b7" stroke-width="1"/><text x="110" y="76" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 1 ТБ</text><path d="M118.0,56.0 H171.0 Q175.0,56.0 175.0,60.0 V67.0 Q175.0,71.0 171.0,71.0 H118.0 Z" fill="#2a78d6"/><text x="180.0" y="68" font-size="9.5" font-weight="700" fill="#0b0b0b">2 141 ₽</text><path d="M118.0,73.0 H153.9 Q157.9,73.0 157.9,77.0 V84.0 Q157.9,88.0 153.9,88.0 H118.0 Z" fill="#eb6834"/><text x="162.9" y="85" font-size="9.5" font-weight="700" fill="#0b0b0b">1 500 ₽</text><text x="110" y="122" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 2 ТБ</text><path d="M118.0,102.0 H215.3 Q219.3,102.0 219.3,106.0 V113.0 Q219.3,117.0 215.3,117.0 H118.0 Z" fill="#2a78d6"/><text x="224.3" y="114" font-size="9.5" font-weight="700" fill="#0b0b0b">3 809 ₽</text><path d="M118.0,119.0 H188.5 Q192.5,119.0 192.5,123.0 V130.0 Q192.5,134.0 188.5,134.0 H118.0 Z" fill="#eb6834"/><text x="197.5" y="131" font-size="9.5" font-weight="700" fill="#0b0b0b">2 800 ₽</text><text x="110" y="168" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 3 ТБ</text><path d="M118.0,148.0 H285.9 Q289.9,148.0 289.9,152.0 V159.0 Q289.9,163.0 285.9,163.0 H118.0 Z" fill="#2a78d6"/><text x="294.9" y="160" font-size="9.5" font-weight="700" fill="#0b0b0b">6 461 ₽</text><path d="M118.0,165.0 H207.1 Q211.1,165.0 211.1,169.0 V176.0 Q211.1,180.0 207.1,180.0 H118.0 Z" fill="#eb6834"/><text x="216.1" y="177" font-size="9.5" font-weight="700" fill="#0b0b0b">3 500 ₽</text><text x="110" y="214" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 4 ТБ</text><path d="M118.0,194.0 H237.4 Q241.4,194.0 241.4,198.0 V205.0 Q241.4,209.0 237.4,209.0 H118.0 Z" fill="#2a78d6"/><text x="246.4" y="206" font-size="9.5" font-weight="700" fill="#0b0b0b">4 639 ₽</text><path d="M118.0,211.0 H220.4 Q224.4,211.0 224.4,215.0 V222.0 Q224.4,226.0 220.4,226.0 H118.0 Z" fill="#eb6834"/><text x="229.4" y="223" font-size="9.5" font-weight="700" fill="#0b0b0b">4 000 ₽</text><text x="110" y="260" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 6 ТБ</text><path d="M118.0,240.0 H551.4 Q555.4,240.0 555.4,244.0 V251.0 Q555.4,255.0 551.4,255.0 H118.0 Z" fill="#2a78d6"/><text x="560.4" y="252" font-size="9.5" font-weight="700" fill="#0b0b0b">16 443 ₽</text><path d="M118.0,257.0 H353.4 Q357.4,257.0 357.4,261.0 V268.0 Q357.4,272.0 353.4,272.0 H118.0 Z" fill="#eb6834"/><text x="362.4" y="269" font-size="9.5" font-weight="700" fill="#0b0b0b">9 000 ₽</text></svg></div>
+</section>
+<section class="page"><h2>3. Удельная цена и выгода вторички</h2>
+<div class="chart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 418" width="720" height="418" font-family="Liberation Sans, DejaVu Sans, sans-serif"><text x="0" y="16" font-size="13" font-weight="700" fill="#0b0b0b">Удельная цена нового, ₽ за 1 ГБ (по минимуму)</text><text x="0" y="31" font-size="10" fill="#52514e">Чем ниже столбик, тем дешевле обходится ёмкость</text><line x1="118.0" y1="36" x2="118.0" y2="396" stroke="#e1e0d9" stroke-width="1"/><text x="118.0" y="410" font-size="9" fill="#898781" text-anchor="middle">0</text><line x1="247.5" y1="36" x2="247.5" y2="396" stroke="#e1e0d9" stroke-width="1"/><text x="247.5" y="410" font-size="9" fill="#898781" text-anchor="middle">200</text><line x1="377.0" y1="36" x2="377.0" y2="396" stroke="#e1e0d9" stroke-width="1"/><text x="377.0" y="410" font-size="9" fill="#898781" text-anchor="middle">400</text><line x1="506.5" y1="36" x2="506.5" y2="396" stroke="#e1e0d9" stroke-width="1"/><text x="506.5" y="410" font-size="9" fill="#898781" text-anchor="middle">600</text><line x1="636.0" y1="36" x2="636.0" y2="396" stroke="#e1e0d9" stroke-width="1"/><text x="636.0" y="410" font-size="9" fill="#898781" text-anchor="middle">800</text><line x1="118" y1="36" x2="118" y2="396" stroke="#c3c2b7" stroke-width="1"/><text x="110" y="52" font-size="10.5" fill="#0b0b0b" text-anchor="end">DDR4 4 ГБ</text><path d="M118.0,40.0 H274.3 Q278.3,40.0 278.3,44.0 V51.0 Q278.3,55.0 274.3,55.0 H118.0 Z" fill="#2a78d6"/><text x="110" y="77" font-size="10.5" fill="#0b0b0b" text-anchor="end">DDR4 8 ГБ</text><path d="M118.0,65.0 H457.4 Q461.4,65.0 461.4,69.0 V76.0 Q461.4,80.0 457.4,80.0 H118.0 Z" fill="#2a78d6"/><text x="110" y="102" font-size="10.5" fill="#0b0b0b" text-anchor="end">DDR4 16 ГБ</text><path d="M118.0,90.0 H541.0 Q545.0,90.0 545.0,94.0 V101.0 Q545.0,105.0 541.0,105.0 H118.0 Z" fill="#2a78d6"/><text x="550.0" y="102" font-size="9.5" font-weight="700" fill="#0b0b0b">659.4 ₽/ГБ</text><text x="110" y="127" font-size="10.5" fill="#0b0b0b" text-anchor="end">DDR4 32 ГБ</text><path d="M118.0,115.0 H467.4 Q471.4,115.0 471.4,119.0 V126.0 Q471.4,130.0 467.4,130.0 H118.0 Z" fill="#2a78d6"/><text x="110" y="152" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 128 ГБ</text><path d="M118.0,140.0 H120.1 Q124.1,140.0 124.1,144.0 V151.0 Q124.1,155.0 120.1,155.0 H118.0 Z" fill="#2a78d6"/><text x="110" y="177" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 240 ГБ</text><path d="M118.0,165.0 H120.7 Q124.7,165.0 124.7,169.0 V176.0 Q124.7,180.0 120.7,180.0 H118.0 Z" fill="#2a78d6"/><text x="110" y="202" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 512 ГБ</text><path d="M118.0,190.0 H121.5 Q125.5,190.0 125.5,194.0 V201.0 Q125.5,205.0 121.5,205.0 H118.0 Z" fill="#2a78d6"/><text x="110" y="227" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 1 ТБ</text><path d="M118.0,215.0 H118.0 Q120.3,215.0 120.3,217.3 V227.7 Q120.3,230.0 118.0,230.0 H118.0 Z" fill="#2a78d6"/><text x="110" y="252" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 2 ТБ</text><path d="M118.0,240.0 H118.6 Q122.6,240.0 122.6,244.0 V251.0 Q122.6,255.0 118.6,255.0 H118.0 Z" fill="#2a78d6"/><text x="110" y="277" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 1 ТБ</text><path d="M118.0,265.0 H118.0 Q119.4,265.0 119.4,266.4 V278.6 Q119.4,280.0 118.0,280.0 H118.0 Z" fill="#2a78d6"/><text x="110" y="302" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 2 ТБ</text><path d="M118.0,290.0 H118.0 Q119.2,290.0 119.2,291.2 V303.8 Q119.2,305.0 118.0,305.0 H118.0 Z" fill="#2a78d6"/><text x="110" y="327" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 3 ТБ</text><path d="M118.0,315.0 H118.0 Q119.4,315.0 119.4,316.4 V328.6 Q119.4,330.0 118.0,330.0 H118.0 Z" fill="#2a78d6"/><text x="110" y="352" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 4 ТБ</text><path d="M118.0,340.0 H118.0 Q118.8,340.0 118.8,340.8 V354.2 Q118.8,355.0 118.0,355.0 H118.0 Z" fill="#2a78d6"/><text x="123.8" y="352" font-size="9.5" font-weight="700" fill="#0b0b0b">1.2 ₽/ГБ</text><text x="110" y="377" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 6 ТБ</text><path d="M118.0,365.0 H118.0 Q119.8,365.0 119.8,366.8 V378.2 Q119.8,380.0 118.0,380.0 H118.0 Z" fill="#2a78d6"/></svg></div>
+<div class="chart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 418" width="720" height="418" font-family="Liberation Sans, DejaVu Sans, sans-serif"><text x="0" y="16" font-size="13" font-weight="700" fill="#0b0b0b">Дисконт б/у к новому, %</text><text x="0" y="31" font-size="10" fill="#52514e">На сколько минимум вторичного рынка ниже минимума новой розницы</text><line x1="118.0" y1="36" x2="118.0" y2="396" stroke="#e1e0d9" stroke-width="1"/><text x="118.0" y="410" font-size="9" fill="#898781" text-anchor="middle">0</text><line x1="290.7" y1="36" x2="290.7" y2="396" stroke="#e1e0d9" stroke-width="1"/><text x="290.7" y="410" font-size="9" fill="#898781" text-anchor="middle">20</text><line x1="463.3" y1="36" x2="463.3" y2="396" stroke="#e1e0d9" stroke-width="1"/><text x="463.3" y="410" font-size="9" fill="#898781" text-anchor="middle">40</text><line x1="636.0" y1="36" x2="636.0" y2="396" stroke="#e1e0d9" stroke-width="1"/><text x="636.0" y="410" font-size="9" fill="#898781" text-anchor="middle">60</text><line x1="118" y1="36" x2="118" y2="396" stroke="#c3c2b7" stroke-width="1"/><text x="110" y="52" font-size="10.5" fill="#0b0b0b" text-anchor="end">DDR4 4 ГБ</text><path d="M118.0,40.0 H410.5 Q414.5,40.0 414.5,44.0 V51.0 Q414.5,55.0 410.5,55.0 H118.0 Z" fill="#eb6834"/><text x="110" y="77" font-size="10.5" fill="#0b0b0b" text-anchor="end">DDR4 8 ГБ</text><path d="M118.0,65.0 H489.0 Q493.0,65.0 493.0,69.0 V76.0 Q493.0,80.0 489.0,80.0 H118.0 Z" fill="#eb6834"/><text x="110" y="102" font-size="10.5" fill="#0b0b0b" text-anchor="end">DDR4 16 ГБ</text><path d="M118.0,90.0 H486.4 Q490.4,90.0 490.4,94.0 V101.0 Q490.4,105.0 486.4,105.0 H118.0 Z" fill="#eb6834"/><text x="110" y="127" font-size="10.5" fill="#0b0b0b" text-anchor="end">DDR4 32 ГБ</text><path d="M118.0,115.0 H433.5 Q437.5,115.0 437.5,119.0 V126.0 Q437.5,130.0 433.5,130.0 H118.0 Z" fill="#eb6834"/><text x="110" y="152" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 128 ГБ</text><path d="M118.0,140.0 H473.7 Q477.7,140.0 477.7,144.0 V151.0 Q477.7,155.0 473.7,155.0 H118.0 Z" fill="#eb6834"/><text x="110" y="177" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 240 ГБ</text><path d="M118.0,165.0 H526.6 Q530.6,165.0 530.6,169.0 V176.0 Q530.6,180.0 526.6,180.0 H118.0 Z" fill="#eb6834"/><text x="110" y="202" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 512 ГБ</text><path d="M118.0,190.0 H569.1 Q573.1,190.0 573.1,194.0 V201.0 Q573.1,205.0 569.1,205.0 H118.0 Z" fill="#eb6834"/><text x="110" y="227" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 1 ТБ</text><path d="M118.0,215.0 H200.4 Q204.4,215.0 204.4,219.0 V226.0 Q204.4,230.0 200.4,230.0 H118.0 Z" fill="#eb6834"/><text x="209.4" y="227" font-size="9.5" font-weight="700" fill="#0b0b0b">10 %</text><text x="110" y="252" font-size="10.5" fill="#0b0b0b" text-anchor="end">SSD 2 ТБ</text><path d="M118.0,240.0 H586.1 Q590.1,240.0 590.1,244.0 V251.0 Q590.1,255.0 586.1,255.0 H118.0 Z" fill="#eb6834"/><text x="595.1" y="252" font-size="9.5" font-weight="700" fill="#0b0b0b">55 %</text><text x="110" y="277" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 1 ТБ</text><path d="M118.0,265.0 H372.5 Q376.5,265.0 376.5,269.0 V276.0 Q376.5,280.0 372.5,280.0 H118.0 Z" fill="#eb6834"/><text x="110" y="302" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 2 ТБ</text><path d="M118.0,290.0 H342.7 Q346.7,290.0 346.7,294.0 V301.0 Q346.7,305.0 342.7,305.0 H118.0 Z" fill="#eb6834"/><text x="110" y="327" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 3 ТБ</text><path d="M118.0,315.0 H509.7 Q513.7,315.0 513.7,319.0 V326.0 Q513.7,330.0 509.7,330.0 H118.0 Z" fill="#eb6834"/><text x="110" y="352" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 4 ТБ</text><path d="M118.0,340.0 H232.9 Q236.9,340.0 236.9,344.0 V351.0 Q236.9,355.0 232.9,355.0 H118.0 Z" fill="#eb6834"/><text x="110" y="377" font-size="10.5" fill="#0b0b0b" text-anchor="end">HDD 6 ТБ</text><path d="M118.0,365.0 H504.8 Q508.8,365.0 508.8,369.0 V376.0 Q508.8,380.0 504.8,380.0 H118.0 Z" fill="#eb6834"/></svg></div>
+<div class="note"><b>Как читать удельную цену.</b> Память дороже накопителей на порядок за гигабайт: DDR4 обходится в сотни рублей за ГБ, а HDD и ёмкие SSD — в единицы рублей за ГБ. Для наращивания объёма хранения выгоднее всего ёмкие HDD; для скорости системного диска — SSD SATA среднего объёма.</div>
+</section>
+<section class="page"><h2>4. Оперативная память DDR4: детализация по позициям</h2>
+<h3>Оперативная память DDR4 4 ГБ (модуль DIMM)</h3>
+<h4>Новое (розница) — минимум 990 ₽ · типичный диапазон 990 ₽ – 2 200 ₽ · уверенность средняя</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>другое</td><td>Apacer 4 ГБ 2666 (EL.04G2V.KNH)</td><td class="num">740 ₽</td><td class="small">цена из сниппета, продавец неясен</td><td><span class="badge none">низкая</span></td></tr>
+<tr class="hl"><td>Ситилинк</td><td>Kingmax KM-LD4-2666-4GS DDR4 4 ГБ 2666 <span class="dom">citilink.ru</span></td><td class="num">990 ₽</td><td class="small">модуль DIMM</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Ситилинк</td><td>Patriot PSD44G240081 DDR4 4 ГБ 2400 <span class="dom">citilink.ru</span></td><td class="num">1 090 ₽</td><td class="small"></td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Ситилинк</td><td>Patriot Signature PSD44G266681 DDR4 4 ГБ <span class="dom">citilink.ru</span></td><td class="num">1 190 ₽</td><td class="small">1150 ₽ по клубной цене</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>E-katalog</td><td>Crucial Value DDR4 1x4 ГБ CT4G4DFS824A <span class="dom">e-katalog.ru</span></td><td class="num">1 400 ₽</td><td class="small">от (минимум в категории)</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Регард</td><td>Netac Basic DDR4-2666 4 ГБ <span class="dom">regard.ru</span></td><td class="num">1 600 ₽</td><td class="small"></td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Wildberries</td><td>Apacer 4 ГБ (EL.04G2V.KNH) <span class="dom">wildberries.ru</span></td><td class="num">1 638 ₽</td><td class="small"></td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">Одиночный модуль DIMM. 4 ГБ практически снят с производства, ассортимент тонкий.</div>
+<h4>Б/у (вторичный рынок) — минимум 650 ₽ · типичный диапазон 650 ₽ – 1 300 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>eBay (референс)</td><td>DDR4 4 ГБ used <span class="dom">ebay.com</span></td><td class="num">520 ₽</td><td class="small">6 USD, международный референс</td><td><span class="badge none">низкая</span></td></tr>
+<tr><td>Авито (оценка)</td><td>DDR4 4 ГБ б/у, рабочий модуль</td><td class="num">700 ₽</td><td class="small">оценка по дисконту к рознице</td><td><span class="badge none">низкая</span></td></tr>
+</tbody></table>
+<div class="note">Оценка: модуль 4 ГБ на вторичке стоит около 40–55 % от розницы; спрос низкий, часто идут в связках.</div>
+<h3>Оперативная память DDR4 8 ГБ (модуль DIMM)</h3>
+<h4>Новое (розница) — минимум 4 243 ₽ · типичный диапазон 4 243 ₽ – 5 800 ₽ · уверенность средняя</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr class="hl"><td>Яндекс Маркет</td><td>Digma DDR4 8 ГБ 2666 DIMM <span class="dom">market.yandex.ru</span></td><td class="num">4 243 ₽</td><td class="small">бюджетный бренд</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>Netac Shadow S DDR4 8 ГБ 3200 <span class="dom">market.yandex.ru</span></td><td class="num">4 876 ₽</td><td class="small">с картой Яндекс Пэй</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Ситилинк</td><td>Crucial CT8G4DFRA266 DDR4 8 ГБ 2666 DIMM <span class="dom">citilink.ru</span></td><td class="num">5 290 ₽</td><td class="small"></td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>Samsung M471/M378 DDR4 8 ГБ 3200 <span class="dom">market.yandex.ru</span></td><td class="num">5 584 ₽</td><td class="small"></td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">Одиночный модуль DIMM 2666/3200. Цены выросли из-за дефицита DRAM 2026.</div>
+<h4>Б/у (вторичный рынок) — минимум 2 400 ₽ · типичный диапазон 2 500 ₽ – 3 900 ₽ · уверенность средняя</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>eBay (референс)</td><td>DDR4 8 ГБ used Samsung/Micron <span class="dom">ebay.com</span></td><td class="num">866 ₽</td><td class="small">≈9–12 USD, международный референс</td><td><span class="badge none">низкая</span></td></tr>
+<tr><td>Авито (оценка)</td><td>DDR4 8 ГБ б/у, проверенный модуль</td><td class="num">2 600 ₽</td><td class="small">оценка по дисконту к рознице</td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">Оценка: б/у модуль 8 ГБ ~55–60 % от розницы. Продажи ОЗУ на вторичке за год почти удвоились (Авито).</div>
+<h3>Оперативная память DDR4 16 ГБ (модуль DIMM)</h3>
+<h4>Новое (розница) — минимум 10 551 ₽ · типичный диапазон 10 500 ₽ – 15 000 ₽ · уверенность средняя</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr class="hl"><td>Яндекс Маркет</td><td>Kingspec KS3200D4P12016G DDR4 16 ГБ 3200 <span class="dom">market.yandex.ru</span></td><td class="num">10 551 ₽</td><td class="small">с картой Яндекс Пэй</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>Netac Shadow II DDR4 16 ГБ 3200 <span class="dom">market.yandex.ru</span></td><td class="num">11 833 ₽</td><td class="small">с картой Яндекс Пэй</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Ozon</td><td>CBR DDR4 16 ГБ 2666 DIMM (1x16) <span class="dom">ozon.ru</span></td><td class="num">21 300 ₽</td><td class="small">верхняя граница</td><td><span class="badge none">низкая</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>A-Data AD4S320016G DDR4 16 ГБ 3200 <span class="dom">market.yandex.ru</span></td><td class="num">24 564 ₽</td><td class="small">премиум/выброс</td><td><span class="badge none">низкая</span></td></tr>
+</tbody></table>
+<div class="note">Одиночный модуль 1x16. Резкий рост за 2026: до дефицита 16 ГБ стоили ~7,4–9,2 тыс. ₽.</div>
+<h4>Б/у (вторичный рынок) — минимум 6 000 ₽ · типичный диапазон 6 000 ₽ – 9 000 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>Авито (оценка)</td><td>DDR4 16 ГБ б/у, модуль 1x16</td><td class="num">6 500 ₽</td><td class="small">оценка по дисконту к рознице</td><td><span class="badge none">низкая</span></td></tr>
+</tbody></table>
+<div class="note">Оценка: б/у 16 ГБ ~55–60 % от текущей розницы; из-за дефицита разрыв новое/б/у сократился.</div>
+<h3>Оперативная память DDR4 32 ГБ (модуль/кит)</h3>
+<h4>Новое (розница) — минимум 17 463 ₽ · типичный диапазон 17 000 ₽ – 29 000 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>Эльдорадо</td><td>Kingston FURY Beast RGB 32 ГБ 3200 <span class="dom">eldorado.ru</span></td><td class="num">14 999 ₽</td><td class="small">вероятно кит/акция, требует проверки</td><td><span class="badge none">низкая</span></td></tr>
+<tr class="hl"><td>Российские площадки</td><td>DDR4 32 ГБ (модуль)</td><td class="num">17 463 ₽</td><td class="small">оценка нижней границы</td><td><span class="badge none">низкая</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>Netac Shadow II DDR4 32 ГБ (2x16) 3200 <span class="dom">market.yandex.ru</span></td><td class="num">28 326 ₽</td><td class="small">кит 2x16</td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">Одиночный модуль 1x32 в рознице редок, чаще продаётся кит 2x16. Цены сильно выросли.</div>
+<h4>Б/у (вторичный рынок) — минимум 11 000 ₽ · типичный диапазон 11 000 ₽ – 17 000 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>Авито (оценка)</td><td>DDR4 32 ГБ б/у (2x16 или 1x32)</td><td class="num">12 000 ₽</td><td class="small">оценка по дисконту к рознице</td><td><span class="badge none">низкая</span></td></tr>
+</tbody></table>
+<div class="note">Оценка: б/у 32 ГБ (модуль или кит 2x16) ~55–65 % от розницы.</div>
+</section>
+<section class="page"><h2>5. SSD SATA 2.5&quot;: детализация по позициям</h2>
+<h3>SSD SATA 120–128 ГБ 2.5&quot;</h3>
+<h4>Новое (розница) — минимум 1 200 ₽ · типичный диапазон 1 200 ₽ – 2 500 ₽ · уверенность средняя</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr class="hl"><td>Hardprice</td><td>Kingston A400 SA400S37/120G 120 ГБ 2.5&quot; SATA <span class="dom">hardprice.ru</span></td><td class="num">1 200 ₽</td><td class="small">от (минимум)</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Ситилинк</td><td>Kingston A400 120 ГБ 2.5&quot; SATA III <span class="dom">citilink.ru</span></td><td class="num">1 690 ₽</td><td class="small"></td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">Kingston A400 120 ГБ — базовая бюджетная модель. 120/128 ГБ постепенно уходят с рынка.</div>
+<h4>Б/у (вторичный рынок) — минимум 700 ₽ · типичный диапазон 700 ₽ – 1 400 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>Авито (оценка)</td><td>SSD 128 ГБ б/у, SMART в норме</td><td class="num">800 ₽</td><td class="small">оценка по дисконту к рознице</td><td><span class="badge none">низкая</span></td></tr>
+</tbody></table>
+<div class="note">Оценка: б/у SSD 128 ГБ ~45–55 % от розницы. Обязательна проверка ресурса по SMART.</div>
+<h3>SSD SATA 240–256 ГБ 2.5&quot;</h3>
+<h4>Новое (розница) — минимум 2 490 ₽ · типичный диапазон 2 500 ₽ – 5 000 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr class="hl"><td>Российские площадки</td><td>SSD SATA 240 ГБ бюджетный бренд</td><td class="num">2 490 ₽</td><td class="small">оценка нижней границы</td><td><span class="badge none">низкая</span></td></tr>
+<tr><td>NIX</td><td>Kingston A400 SA400S37/240G 240 ГБ 2.5&quot; SATA <span class="dom">nix.ru</span></td><td class="num">7 782 ₽</td><td class="small">конкретная цена, выше бюджетных</td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">Бюджетные бренды (Digma, Smartbuy, Netac). Kingston A400 240 у части продавцов заметно дороже (см. ниже).</div>
+<h4>Б/у (вторичный рынок) — минимум 1 300 ₽ · типичный диапазон 1 400 ₽ – 2 600 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>Авито (оценка)</td><td>SSD 240 ГБ б/у</td><td class="num">1 500 ₽</td><td class="small">оценка по дисконту к рознице</td><td><span class="badge none">низкая</span></td></tr>
+</tbody></table>
+<div class="note">Оценка: б/у SSD 240 ГБ ~45–55 % от розницы.</div>
+<h3>SSD SATA 480–512 ГБ 2.5&quot;</h3>
+<h4>Новое (розница) — минимум 5 922 ₽ · типичный диапазон 6 000 ₽ – 9 000 ₽ · уверенность средняя</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr class="hl"><td>Яндекс Маркет</td><td>QOPP 512 ГБ SATA III 2.5&quot; <span class="dom">market.yandex.ru</span></td><td class="num">5 922 ₽</td><td class="small">минимум в выдаче</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>A-DATA Ultimate SU650 512 ГБ SATA <span class="dom">market.yandex.ru</span></td><td class="num">7 139 ₽</td><td class="small"></td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>Netac N600S 512 ГБ SATA <span class="dom">market.yandex.ru</span></td><td class="num">24 113 ₽</td><td class="small">выброс, требует проверки</td><td><span class="badge none">низкая</span></td></tr>
+</tbody></table>
+<div class="note">Бюджетные TLC-модели. Netac N600S 512 у отдельных продавцов — резкий выброс (24 тыс. ₽).</div>
+<h4>Б/у (вторичный рынок) — минимум 2 800 ₽ · типичный диапазон 2 900 ₽ – 4 500 ₽ · уверенность средняя</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>Авито (оценка)</td><td>SSD 512 ГБ б/у, SMART в норме</td><td class="num">3 000 ₽</td><td class="small">средняя цена б/у SSD на Авито</td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">Оценка: б/у SSD 512 ГБ ~45–55 % от розницы. Средняя цена б/у SSD на Авито ~3 000 ₽.</div>
+<h3>SSD SATA 960 ГБ – 1 ТБ 2.5&quot;</h3>
+<h4>Новое (розница) — минимум 3 556 ₽ · типичный диапазон 5 500 ₽ – 9 000 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr class="hl"><td>Яндекс Маркет</td><td>Digma Run S9 1 ТБ SATA III <span class="dom">market.yandex.ru</span></td><td class="num">3 556 ₽</td><td class="small">с картой Яндекс Пэй, акция</td><td><span class="badge none">низкая</span></td></tr>
+<tr><td>Российские площадки</td><td>Netac N600S / Apacer AS350 1 ТБ SATA</td><td class="num">5 600 ₽</td><td class="small">бюджетные бренды</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>DNS</td><td>Crucial BX500 1 ТБ 2.5&quot; SATA <span class="dom">dns-shop.ru</span></td><td class="num">11 499 ₽</td><td class="small"></td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>Samsung 870 EVO 1 ТБ MZ-77E1T0BW <span class="dom">market.yandex.ru</span></td><td class="num">29 605 ₽</td><td class="small">премиум, с картой</td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">Digma Run S9 1 ТБ по акции с картой дешевле 512 ГБ — аномалия акции. Бюджетные 1 ТБ обычно 5,5–6 тыс. ₽; премиум (Samsung 870 EVO) — 29–32 тыс. ₽.</div>
+<h4>Б/у (вторичный рынок) — минимум 3 200 ₽ · типичный диапазон 3 500 ₽ – 6 000 ₽ · уверенность средняя</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>Авито (оценка)</td><td>SSD 1 ТБ б/у, SMART в норме</td><td class="num">3 500 ₽</td><td class="small">оценка по дисконту к рознице</td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">Оценка: б/у SSD 1 ТБ ~45–55 % от розницы бюджетных моделей.</div>
+<h3>SSD SATA 2 ТБ 2.5&quot;</h3>
+<h4>Новое (розница) — минимум 14 343 ₽ · типичный диапазон 12 000 ₽ – 17 000 ₽ · уверенность средняя</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr class="hl"><td>Яндекс Маркет</td><td>Samsung 870 QVO 2 ТБ MZ-77Q2T0BW <span class="dom">market.yandex.ru</span></td><td class="num">14 343 ₽</td><td class="small">минимум в выдаче</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>online-samsung.ru</td><td>Samsung 870 QVO 2 ТБ MZ-77Q2T0BW <span class="dom">online-samsung.ru</span></td><td class="num">16 590 ₽</td><td class="small"></td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">Samsung 870 QVO 2 ТБ — самая ходовая 2 ТБ SATA. Бюджетные бренды могут быть немного дешевле.</div>
+<h4>Б/у (вторичный рынок) — минимум 6 500 ₽ · типичный диапазон 6 800 ₽ – 9 500 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>Авито (оценка)</td><td>SSD 2 ТБ б/у, SMART в норме</td><td class="num">7 000 ₽</td><td class="small">оценка по дисконту к рознице</td><td><span class="badge none">низкая</span></td></tr>
+</tbody></table>
+<div class="note">Оценка: б/у SSD 2 ТБ ~45–55 % от розницы.</div>
+</section>
+<section class="page"><h2>6. Жёсткие диски HDD 3.5&quot;: детализация по позициям</h2>
+<h3>Жёсткий диск HDD 1 ТБ 3.5&quot;</h3>
+<h4>Новое (розница) — минимум 2 141 ₽ · типичный диапазон 2 100 ₽ – 6 600 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr class="hl"><td>Яндекс Маркет</td><td>WD Blue WD10EZRZ 1 ТБ 3.5&quot; 5400 <span class="dom">market.yandex.ru</span></td><td class="num">2 141 ₽</td><td class="small">от, возможно остатки</td><td><span class="badge none">низкая</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>WD Blue WD10EZEX 1 ТБ 3.5&quot; 7200 <span class="dom">market.yandex.ru</span></td><td class="num">2 321 ₽</td><td class="small">от</td><td><span class="badge none">низкая</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>Seagate Barracuda ST1000DM010 1 ТБ 3.5&quot; <span class="dom">market.yandex.ru</span></td><td class="num">2 561 ₽</td><td class="small">от</td><td><span class="badge none">низкая</span></td></tr>
+<tr><td>torg-pc.ru</td><td>HDD 1 ТБ 3.5&quot; 7200 (сборка) <span class="dom">torg-pc.ru</span></td><td class="num">6 577 ₽</td><td class="small">рыночная розница</td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">Маркетплейсы дают WD Blue/Seagate 1 ТБ от 2,1–2,6 тыс. ₽ (нижние &#x27;от&#x27;, часть — 5400 rpm/остатки). Отраслевые обзоры 2026 сообщают о росте 1 ТБ до 10 тыс. ₽+ — расхождение отмечено.</div>
+<h4>Б/у (вторичный рынок) — минимум 1 500 ₽ · типичный диапазон 1 600 ₽ – 3 000 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>Авито (оценка)</td><td>HDD 1 ТБ 3.5&quot; б/у, SMART в норме</td><td class="num">1 800 ₽</td><td class="small">оценка по дисконту к рознице</td><td><span class="badge none">низкая</span></td></tr>
+</tbody></table>
+<div class="note">Оценка: б/у HDD 1 ТБ ~40–55 % от розницы. Проверять SMART (наработка, переназначенные сектора).</div>
+<h3>Жёсткий диск HDD 2 ТБ 3.5&quot;</h3>
+<h4>Новое (розница) — минимум 3 809 ₽ · типичный диапазон 6 700 ₽ – 15 000 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr class="hl"><td>Яндекс Маркет</td><td>Seagate IronWolf ST2000VN004 2 ТБ <span class="dom">market.yandex.ru</span></td><td class="num">3 809 ₽</td><td class="small">нижняя граница</td><td><span class="badge none">низкая</span></td></tr>
+<tr><td>torg-pc.ru</td><td>HDD 2 ТБ 3.5&quot; 7200 (сборка) <span class="dom">torg-pc.ru</span></td><td class="num">6 729 ₽</td><td class="small">рыночная розница</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>Toshiba DT02-V DT02ABA200V 2 ТБ <span class="dom">market.yandex.ru</span></td><td class="num">14 550 ₽</td><td class="small"></td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>WD Blue WD20EARZ 2 ТБ <span class="dom">market.yandex.ru</span></td><td class="num">15 060 ₽</td><td class="small"></td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">Seagate IronWolf 2 ТБ мелькает от 3,8 тыс. ₽ (нижняя граница), рыночная розница 2 ТБ — 6,7–15 тыс. ₽ (WD Blue, Toshiba).</div>
+<h4>Б/у (вторичный рынок) — минимум 2 800 ₽ · типичный диапазон 3 000 ₽ – 5 500 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>Авито (оценка)</td><td>HDD 2 ТБ 3.5&quot; б/у, SMART в норме</td><td class="num">3 200 ₽</td><td class="small">оценка по дисконту к рознице</td><td><span class="badge none">низкая</span></td></tr>
+</tbody></table>
+<div class="note">Оценка: б/у HDD 2 ТБ ~40–55 % от розницы.</div>
+<h3>Жёсткий диск HDD 3 ТБ 3.5&quot;</h3>
+<h4>Новое (розница) — минимум 6 461 ₽ · типичный диапазон 6 500 ₽ – 14 000 ₽ · уверенность средняя</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr class="hl"><td>Price.ru</td><td>HDD 3 ТБ 3.5&quot; (минимум в каталоге) <span class="dom">price.ru</span></td><td class="num">6 461 ₽</td><td class="small">от</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>Toshiba Deskstar DT01ACA300 3 ТБ <span class="dom">market.yandex.ru</span></td><td class="num">13 685 ₽</td><td class="small"></td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">3 ТБ — переходный объём, ассортимент тоньше. Toshiba Deskstar/P300 3 ТБ.</div>
+<h4>Б/у (вторичный рынок) — минимум 3 500 ₽ · типичный диапазон 3 600 ₽ – 6 500 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>Авито (оценка)</td><td>HDD 3 ТБ 3.5&quot; б/у, SMART в норме</td><td class="num">3 800 ₽</td><td class="small">оценка по дисконту к рознице</td><td><span class="badge none">низкая</span></td></tr>
+</tbody></table>
+<div class="note">Оценка: б/у HDD 3 ТБ ~45–55 % от розницы.</div>
+<h3>Жёсткий диск HDD 4 ТБ 3.5&quot;</h3>
+<h4>Новое (розница) — минимум 4 639 ₽ · типичный диапазон 8 000 ₽ – 14 000 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr class="hl"><td>Яндекс Маркет</td><td>Seagate Barracuda ST4000DM004 4 ТБ <span class="dom">market.yandex.ru</span></td><td class="num">4 639 ₽</td><td class="small">нижняя граница</td><td><span class="badge none">низкая</span></td></tr>
+<tr><td>rusmarta.ru</td><td>Seagate Barracuda 4 ТБ (refurbished) <span class="dom">rusmarta.ru</span></td><td class="num">7 500 ₽</td><td class="small">восстановленный</td><td><span class="badge none">низкая</span></td></tr>
+<tr><td>Регард</td><td>WD Blue WD40EZAX 4 ТБ 5400 <span class="dom">regard.ru</span></td><td class="num">9 990 ₽</td><td class="small"></td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">Seagate Barracuda ST4000DM004 мелькает от 4,6 тыс. ₽ (нижняя граница); рыночная розница 4 ТБ — 8–14 тыс. ₽. 2–8 ТБ дорожают быстрее всего (скупают ЦОД).</div>
+<h4>Б/у (вторичный рынок) — минимум 4 000 ₽ · типичный диапазон 4 200 ₽ – 7 500 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>Авито (оценка)</td><td>HDD 4 ТБ 3.5&quot; б/у, SMART в норме</td><td class="num">4 500 ₽</td><td class="small">оценка по дисконту к рознице</td><td><span class="badge none">низкая</span></td></tr>
+</tbody></table>
+<div class="note">Оценка: б/у HDD 4 ТБ ~45–55 % от розницы.</div>
+<h3>Жёсткий диск HDD 6 ТБ 3.5&quot;</h3>
+<h4>Новое (розница) — минимум 16 443 ₽ · типичный диапазон 16 000 ₽ – 29 000 ₽ · уверенность средняя</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr class="hl"><td>torg-pc.ru</td><td>HDD 6 ТБ 3.5&quot; 7200 (сборка) <span class="dom">torg-pc.ru</span></td><td class="num">16 443 ₽</td><td class="small">рыночная розница</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>Seagate SkyHawk ST6000VX009 6 ТБ <span class="dom">market.yandex.ru</span></td><td class="num">25 166 ₽</td><td class="small">с картой Яндекс Пэй</td><td><span class="badge warn">средняя</span></td></tr>
+<tr><td>Яндекс Маркет</td><td>Toshiba MG08 6 ТБ Enterprise <span class="dom">market.yandex.ru</span></td><td class="num">29 445 ₽</td><td class="small">с картой Яндекс Пэй</td><td><span class="badge warn">средняя</span></td></tr>
+</tbody></table>
+<div class="note">6 ТБ CMR — уже &#x27;ёмкий&#x27; диск, спрос ЦОД держит цену высокой.</div>
+<h4>Б/у (вторичный рынок) — минимум 9 000 ₽ · типичный диапазон 9 500 ₽ – 15 000 ₽ · уверенность низкая</h4>
+<table><thead><tr><th style="width:17%">Площадка</th><th>Товар / позиция</th><th class="num" style="width:12%">Цена</th><th style="width:26%">Примечание</th><th style="width:10%">Уверен.</th></tr></thead><tbody>
+<tr><td>Авито (оценка)</td><td>HDD 6 ТБ 3.5&quot; б/у, SMART в норме</td><td class="num">10 000 ₽</td><td class="small">оценка по дисконту к рознице</td><td><span class="badge none">низкая</span></td></tr>
+</tbody></table>
+<div class="note">Оценка: б/у HDD 6 ТБ ~45–60 % от розницы; ёмкие диски на вторичке дефицитны.</div>
+</section>
+<section class="page"><h2>7. Контекст рынка: почему цены такие</h2>
+<p><b>Курс ЦБ РФ:</b> USD 86.5857 ₽, EUR 100.5693 ₽, CNY 12.8849 ₽ (2026-09-05).</p>
+<h3>Оперативная память (DRAM / DDR4)</h3><p>Рынок DRAM в 2025–2026 находится в «ИИ-суперцикле»: Samsung, SK Hynix и Micron перебросили мощности на HBM и DDR5 для ИИ-ЦОД (1 ГБ HBM требует в 3–4 раза больше пластин, чем DDR5), Micron разослал EOL-уведомления по DDR4 в июне 2025, а Samsung и SK Hynix отложили сворачивание DDR4 на 2026 г., оставшиеся объёмы Nanya/Winbond спрос не покрывают. По TrendForce контрактные цены DRAM выросли на 81% кв/кв в 1К2026 (Counterpoint — +80–90%), SigmaIntel оценил 2К2026 ещё в +89%, на 3К2026 TrendForce ждёт +13–18% кв/кв, а Morgan Stanley — +50% именно по DDR4; спот DDR4 8Gb в августе 2026 достиг рекордных ~$42,5 — вдвое выше мая. Серверные DDR4 ECC RDIMM подорожали на 60–80%, DDR5 RDIMM — на 100–116% с начала 2025 по 1К2026; по данным российского трекера цен (goha.ru), стоимость модулей ОЗУ достигла 450% от уровня июля 2025 (SODIMM ×3,75, DDR5-4800+ ×5,1), т.е. рост за год более чем в 4–5 раз. Рублёвые примеры: модуль DDR4 16 ГБ — ~15 000 руб. вместо ~10 000 руб. (+51% за квартал, news.mail.ru); серверная Samsung 64 ГБ — с 90 000 до 110 000 руб., Samsung 32 ГБ — с 80 000 до 160 000 руб. (Хабр); из-за сокращения линий DDR4 в ряде случаев стоит столько же, сколько DDR5 (hi-tech.mail.ru). SK Hynix ожидает дефицит DRAM как минимум до 2028 г., поставщики предупреждают о +10–20% в месяц до конца 2026.</p>
+<h3>SSD (NAND)</h3><p>NAND и SSD растут вслед за DRAM, но медленнее и с признаками насыщения. В 1К2026 цены на чипы NAND для SSD подскочили более чем на 90% к концу 2025 (iXBT), в июне 2026 SSD в российской рознице стоили на 21% дороже, чем годом ранее (finance.mail.ru), а за 2–3 года ценники потребительских SSD выросли в 2–10 раз (iGuides). Причина — ИИ-серверы требуют в 8–10 раз больше памяти, чем обычные, спрос растёт ~40% в год при росте предложения NAND лишь на 14–17% в год. На 3К2026 TrendForce прогнозирует +10–15% кв/кв по контрактным ценам NAND — замедление из-за исчерпания платёжеспособности покупателей ПК и смартфонов; по августовской оценке TrendForce SLC умеренно росла, MLC вышла в плато, а digital-razor фиксирует остановку роста контрактных цен на DRAM/NAND из-за сезонного спада спроса. Для SATA SSD (зрелые TLC/QLC) это означает высокие, но стабилизирующиеся цены; часть аналитиков (Storage Switzerland) ждёт дорогой памяти до конца 2027.</p>
+<h3>Жёсткие диски (HDD)</h3><p>HDD стали третьей жертвой ИИ-бума: Western Digital и Seagate распродали все мощности на 2026 г. (часть контрактов — на 2027–2028), nearline-мощности Seagate распределены до конца 2026, сроки поставки достигают 12 месяцев, на ИИ-заказчиков приходится 89% выручки WD. С сентября 2025 по январь 2026 средняя цена популярных HDD выросла на 46% (по моделям +23…66%), WD Blue 4 ТБ — $99 против $67–85; к концу августа 2026 ёмкие CMR-диски держатся около $50/ТБ, а за 18 месяцев рост оценивают в 100–200%. В РФ (3dnews): HDD 1 ТБ подорожал вдвое — с 5–6 тыс. до более 10 тыс. руб. (+79% с сентября), 4 ТБ — 13,7 тыс. руб. (+53%), 8 ТБ — 32 тыс. руб. (+102%); модели, стоившие летом 2025 3–4 тыс. руб., продаются за 6–10 тыс. (cybersport.metaratings). Быстрее всего дорожают диски 2–8 ТБ — их активно скупают ЦОД, оставляя розницу без запасов (hi-tech.mail.ru); зарубежные трекеры отмечают, что спрос концентрируется на больших ёмкостях, а старые потребительские ёмкости в западной розницe местами дисконтируются — в РФ такого эффекта не видно. Дефицит ожидался минимум до середины 2026 и по факту сохраняется: быстрого снижения цен не ждут, пока ИИ-ЦОД «съедают» ресурсы хранения.</p>
+<h3>Вторичный рынок (Авито)</h3><p>По данным Авито, зимой 2025–2026 75% продаж компьютерных комплектующих на площадке пришлись на ресейл (в Петербурге — 72%); продажи SSD «с рук» в декабре–феврале выросли в ~5,5 раза, ОЗУ — почти вдвое год к году, а во 2П2025 продажи б/у SSD выросли на 31% при средней цене 3 000 руб. Б/у комплектующие в среднем в 2,5 раза дешевле новых: SSD — ~4 000 руб. против ~9 000 руб. за новый (дисконт ~55%), HDD — ~4 000 против ~10 000 руб. (~60%), модуль ОЗУ в ресейле — в среднем 5 000 руб. Риски: у SSD ограниченный ресурс записи (TBW/DWPD) — при выработке ресурса по SMART более 70–80% покупку рекомендуют отклонять; накопители после майнинга за год изнашиваются как за 5+ лет обычной эксплуатации; HDD проверяют по SMART (переназначенные сектора, наработка) и тестами поверхности. Гарантия на б/у практически не работает: чеки теряются, часть производителей и сетей привязывает гарантию к первому владельцу. Покупка оправдана, если продавец показывает результаты тестов/SMART, маркировка совпадает с характеристиками, а цена учитывает износ — для магазина б/у техники это аргумент за собственную гарантию и публикацию SMART-скринов в карточках.</p>
+</section>
+<section class="page"><h2>8. Оговорки, методика и источники</h2>
+<h3>На что обратить внимание в данных</h3><ol>
+<li>HDD 1 ТБ: маркетплейсы показывают &#x27;от 2,1–2,6 тыс. ₽&#x27;, а отраслевые обзоры 2026 г. пишут о росте до 10 тыс. ₽+. Низкие цены — это анкеры &#x27;от&#x27; (часто остатки/5400 rpm); реальная розница ходовых моделей ближе к 6–10 тыс. ₽.</li>
+<li>SSD 1 ТБ (3 556 ₽ Digma с картой) оказался дешевле SSD 512 ГБ (5 922 ₽) — это разовая акция с картой Яндекс Пэй, а не устойчивая цена. Ориентируйтесь на типичный диапазон 5,5–9 тыс. ₽.</li>
+<li>DDR4 16/32 ГБ: разброс огромный (16 ГБ от 10,5 до 24,5 тыс. ₽). Причина — дефицит DRAM и сворачивание выпуска DDR4; цены меняются буквально еженедельно, часть предложений — киты 2x8/2x16, а не одиночные модули.</li>
+<li>Цены б/у по всем позициям — оценка по документированному дисконту к рознице и агрегированной статистике Авито, а не прямые листинги: WebSearch из среды не отдаёт карточки Авито, а прямой доступ к сайту закрыт сетевой политикой.</li>
+<li>Часть минимумов новой розницы указана &#x27;с картой&#x27; площадки (Яндекс Пэй, Ozon Карта) — без карты цена выше на 3–10 %.</li>
+</ol>
+<h3>Методика</h3><ul>
+<li><b>Срез:</b> 5 сентября 2026. Источник цен — открытые поисковые сниппеты и заголовки карточек площадок (Яндекс Маркет, DNS, Ситилинк, Ozon, Wildberries, Регард, Никс, E-katalog, Price.ru, Hardprice и др.). Цена фиксировалась только там, где явно указана для подходящего товара.</li>
+<li><b>Форм-факторы:</b> в расчёт минимумов вошли DIMM (память), 2.5" SATA (SSD) и 3.5" (HDD). SO-DIMM, M.2 SATA, 2.5"/внешние диски — не в основном расчёте.</li>
+<li><b>Цены б/у</b> — оценка по документированному дисконту к рознице (SSD ~45–55 % от новой цены, HDD ~40–55 %, модули ОЗУ ~55–65 %) и агрегированной статистике Авито (средняя цена б/у SSD ~3 000 ₽, HDD ~4 000 ₽, модуль ОЗУ ~5 000 ₽; б/у в среднем в ~2,5 раза дешевле нового). Прямые листинги Авито из среды исследования недоступны.</li>
+<li><b>Пересчёт валют</b> (eBay, международный референс) — по курсу ЦБ; в минимумах по РФ такие цены не участвуют.</li>
+<li><b>Ограничения:</b> из-за дефицита DRAM/NAND/HDD 2026 цены волатильны и могут отличаться от указанных на дни; акции «с картой» занижают розницу; на Авито цена зависит от города, состояния и торга. Для закупки партии обязательна сверка по ссылке и проверка SMART/ресурса у б/у.</li>
+</ul>
+<h3>Источники по контексту рынка</h3><ol class="sources cols2">
+<li>Официальный курс доллара на 5 сентября 2026 г. (ЦБ РФ) — finance.mail.ru — <a href="https://finance.mail.ru/article/oficialnyj-kurs-dollara-na-5-sentyabrya-2026-69226197/">https://finance.mail.ru/article/oficialnyj-kurs-dollara-na-5-sentyabrya-2026-692</a></li>
+<li>ЦБ снизил официальный курс доллара до 86,59 рубля — Ведомости — <a href="https://www.vedomosti.ru/finance/news/2026/09/04/1226488-kurs-dollara">https://www.vedomosti.ru/finance/news/2026/09/04/1226488-kurs-dollara</a></li>
+<li>ЦБ снизил курс доллара на 5 сентября — RZN.info — <a href="https://www.rzn.info/news/2026/9/4/cb-snizil-kurs-dollara-na-5-sentyabrya-352514.html">https://www.rzn.info/news/2026/9/4/cb-snizil-kurs-dollara-na-5-sentyabrya-352514</a></li>
+<li>Банк России — официальные курсы валют на заданную дату — <a href="https://www.cbr.ru/currency_base/daily/">https://www.cbr.ru/currency_base/daily/</a></li>
+<li>TrendForce: 1Q26 DRAM industry up 81% QoQ — <a href="https://www.trendforce.com/presscenter/news/20260601-13070.html">https://www.trendforce.com/presscenter/news/20260601-13070.html</a></li>
+<li>TrendForce: AI server demand supports memory prices in 3Q26, gains moderate — <a href="https://www.trendforce.com/presscenter/news/20260703-13134.html">https://www.trendforce.com/presscenter/news/20260703-13134.html</a></li>
+<li>TrendForce: Samsung, SK hynix delay DDR4 phase-out to 2026 — <a href="https://www.trendforce.com/news/2025/09/02/news-samsung-sk-hynix-reportedly-delay-phase-out-to-2026-as-ddr4-becomes-unexpected-cash-cow/">https://www.trendforce.com/news/2025/09/02/news-samsung-sk-hynix-reportedly-dela</a></li>
+<li>TrendForce: Memory giants map 2025-26 exit strategy amid supply crunch — <a href="https://www.trendforce.com/news/2026/01/19/news-out-with-the-old-memory-giants-map-their-2025-26-exit-strategy-amid-supply-crunch/">https://www.trendforce.com/news/2026/01/19/news-out-with-the-old-memory-giants-m</a></li>
+<li>SigmaIntel: во 2К2026 DRAM подорожала на 89% — Overclockers.ru — <a href="https://overclockers.ru/blog/Scorpion81/show/258157/SigmaIntel-vo-vtorom-kvartale-2026-goda-pamyat-DRAM-podorozhala-na-89">https://overclockers.ru/blog/Scorpion81/show/258157/SigmaIntel-vo-vtorom-kvartal</a></li>
+<li>Morgan Stanley: DDR4 вырастет на 50% в 3К2026 — VGTimes — <a href="https://vgtimes.ru/tech-and-hardware/164726-morgan-stanley-ceny-na-ddr4-vyrastut-na-50-v-tretem-kvartale-2026-goda-iz-za-deficita.html">https://vgtimes.ru/tech-and-hardware/164726-morgan-stanley-ceny-na-ddr4-vyrastut</a></li>
+<li>Дефицит DDR4 усиливается — Hi-Tech Mail.ru — <a href="https://hi-tech.mail.ru/news/153562-ii-ostavlyaet-polzovatelej-bez-deshevoj-pamyati-ddr4-zhdet-novyj-skachok-cen/">https://hi-tech.mail.ru/news/153562-ii-ostavlyaet-polzovatelej-bez-deshevoj-pamy</a></li>
+<li>Цены на серверную память и SSD выросли из-за бума ИИ — Хабр — <a href="https://habr.com/ru/news/1076636/">https://habr.com/ru/news/1076636/</a></li>
+<li>Цены на ОЗУ для серверов за полгода поднялись на 25–150% — Новости Mail — <a href="https://news.mail.ru/society/72174079/">https://news.mail.ru/society/72174079/</a></li>
+<li>Оперативная память за год подорожала более чем в 5 раз — GoHa.ru — <a href="https://www.goha.ru/operativnaya-pamyat-za-god-podorozhala-bolee-chem-v-5-raz-lPvVnq">https://www.goha.ru/operativnaya-pamyat-za-god-podorozhala-bolee-chem-v-5-raz-lP</a></li>
+<li>DDR4 8Gb contract &amp; spot price — Silicon Analysts — <a href="https://siliconanalysts.com/market-data/dram-ddr4-price">https://siliconanalysts.com/market-data/dram-ddr4-price</a></li>
+<li>DRAM crisis may last until 2028 — Notebookcheck — <a href="https://www.notebookcheck.net/DRAM-crisis-may-last-until-2028-SK-Hynix-sees-no-quick-recovery.1187137.0.html">https://www.notebookcheck.net/DRAM-crisis-may-last-until-2028-SK-Hynix-sees-no-q</a></li>
+<li>Кризис DRAM 2025–2026 — HYPERPC — <a href="https://hyperpc.ru/blog/gaming-pc/dram-market-crisis">https://hyperpc.ru/blog/gaming-pc/dram-market-crisis</a></li>
+<li>Цены на ОЗУ и SSD взлетели почти вдвое в начале 2026 — iXBT — <a href="https://www.ixbt.com/news/2026/02/09/pamjat-po-cene-zolota-ceny-na-ozu-i-ssd-vzleteli-pochti-vdvoe-v-nachale-2026-goda--i-oni-prodolzhat-rasti.html">https://www.ixbt.com/news/2026/02/09/pamjat-po-cene-zolota-ceny-na-ozu-i-ssd-vzl</a></li>
+<li>Рост цен на ОЗУ и SSD в Петербурге, прогноз 2026–2027 — finance.mail.ru — <a href="https://finance.mail.ru/article/raskryto-stoit-li-otkladyvat-apgrejd-pk-na-fone-rosta-cen-69222947/">https://finance.mail.ru/article/raskryto-stoit-li-otkladyvat-apgrejd-pk-na-fone-</a></li>
+<li>Насколько подорожали SSD к 2026 году — iGuides — <a href="https://www.iguides.ru/main/other/vot_naskolko_podorozhali_ssd_k_2026_godu_naglyadnoe_sravnenie_tsennikov/">https://www.iguides.ru/main/other/vot_naskolko_podorozhali_ssd_k_2026_godu_nagly</a></li>
+<li>Рост цен на память и SSD останавливается — Digital Razor — <a href="https://digital-razor.ru/media/news/hardware/dram-nand-price-stop-rise/">https://digital-razor.ru/media/news/hardware/dram-nand-price-stop-rise/</a></li>
+<li>TrendForce: DRAM and NAND remain more expensive in Q3 2026 — igor&#x27;sLAB — <a href="https://www.igorslab.de/en/dram-and-nand-remain-more-expensive-trendforce-sees-slowing-but-still-rising-memory-prices-q3-2026/">https://www.igorslab.de/en/dram-and-nand-remain-more-expensive-trendforce-sees-s</a></li>
+<li>Memory and Flash Prices Are Not Coming Down (Through 2027) — Storage Switzerland — <a href="https://storageswiss.com/2026/05/06/memory-and-flash-prices-not-coming-down/">https://storageswiss.com/2026/05/06/memory-and-flash-prices-not-coming-down/</a></li>
+<li>Жёсткие диски пали очередной жертвой ИИ — цены в России — 3DNews — <a href="https://3dnews.ru/1135426/gyostkie-diski-pali-ocherednoy-gertvoy-ii-s-sentyabrya-tseni-vzleteli-i-v-rossii-toge">https://3dnews.ru/1135426/gyostkie-diski-pali-ocherednoy-gertvoy-ii-s-sentyabrya</a></li>
+<li>Почему жёсткие диски резко подорожали — Hi-Tech Mail.ru — <a href="https://hi-tech.mail.ru/news/142868-krizis-dobralsya-do-hdd-chto-proishodit/">https://hi-tech.mail.ru/news/142868-krizis-dobralsya-do-hdd-chto-proishodit/</a></li>
+<li>Цены на HDD и SSD взлетели до 10 тысяч рублей — Metaratings — <a href="https://cybersport.metaratings.ru/articles/ceny-na-hdd-vzleteli-do-10-tysyach-rublei-chto-proiskhodit-i-kogda-podesheveet-khranenie-dannykh/">https://cybersport.metaratings.ru/articles/ceny-na-hdd-vzleteli-do-10-tysyach-ru</a></li>
+</ol>
+<p class="small muted">Отчёт подготовлен для магазина StyleNova (б/у компьютерная техника). Цены ориентировочные, не являются публичной офертой.</p>
+</section></body></html>
