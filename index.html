@@ -391,7 +391,7 @@ footer{background:rgba(5,6,8,.74);backdrop-filter:blur(8px);margin-top:20px;padd
 .dft{padding:20px;border-top:1px solid var(--line);display:grid;gap:12px}
 .total{display:flex;justify-content:space-between;align-items:baseline}
 .total b{font-family:'Montserrat',sans-serif;font-size:26px}
-.dft .btn{justify-content:center}
+.dft .btn{justify-content:center}.dft input{background:var(--ink);border:1px solid var(--line);color:var(--text);padding:12px 14px;border-radius:var(--r);outline:none;font-size:14px;width:100%}.dft input:focus{border-color:var(--red)}
 .toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,140%);background:var(--red);color:#fff;padding:12px 22px;border-radius:var(--r);font-weight:600;font-size:14px;z-index:120;transition:.3s;box-shadow:0 10px 40px -10px rgba(224,26,34,.8)}
 .toast.on{transform:translate(-50%,0)}
 
@@ -633,6 +633,7 @@ footer{background:rgba(5,6,8,.74);backdrop-filter:blur(8px);margin-top:20px;padd
       <input name="name" placeholder="Как к вам обращаться" required>
       <input name="phone" type="tel" placeholder="Телефон для связи" required>
       <input name="task" placeholder="Что нужно: техника и количество">
+      <input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
       <button class="btn btn-red" type="submit">Отправить заявку</button>
     </form>
   </div>
@@ -679,6 +680,7 @@ footer{background:rgba(5,6,8,.74);backdrop-filter:blur(8px);margin-top:20px;padd
       <ul>
         <li><a class="mono" href="tel:+79856190903">+7 (985) 619-09-03</a></li>
         <li><a href="mailto:stylenova@inbox.ru">stylenova@inbox.ru</a></li>
+        <li><a href="https://t.me/Don_bargo" target="_blank" rel="noopener">Telegram: @Don_bargo</a></li>
         <li>Москва, ул. Кировоградская, 9к1</li>
         <li>Пн–сб 10:00–20:00, вс — выходной</li>
       </ul>
@@ -700,7 +702,10 @@ footer{background:rgba(5,6,8,.74);backdrop-filter:blur(8px);margin-top:20px;padd
   <div class="dbody" id="dbody"></div>
   <div class="dft">
     <div class="total"><span style="color:var(--muted)">Итого</span><b id="total">0 ₽</b></div>
-    <button class="btn btn-red" onclick="checkout()">Оформить заказ</button>
+    <input id="oname" placeholder="Как к вам обращаться" autocomplete="name" aria-label="Имя">
+    <input id="ophone" type="tel" placeholder="Телефон для связи" autocomplete="tel" required aria-label="Телефон">
+    <input id="ohp" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+    <button class="btn btn-red" id="obtn" onclick="checkout()">Оформить заказ</button>
     <span style="font-size:12px;color:var(--muted);text-align:center">Менеджер перезвонит в течение 15 минут и подтвердит наличие</span>
   </div>
 </div>
@@ -727,6 +732,22 @@ const ICONS={
 
 let cat='all',q='',cart=JSON.parse(localStorage.getItem('sn_cart')||'[]');
 const $=s=>document.querySelector(s),fmt=n=>n.toLocaleString('ru-RU')+' ₽';
+/* Приём заявок. api — адрес AI Office (репозиторий desktop-tutorial), например 'https://office.stylenova.ru/api'.
+   Пусто или недоступно — заявка уходит письмом на почту магазина, чтобы ни одно обращение не потерялось. */
+const SN_LEADS={api:'',mail:'stylenova@inbox.ru',tg:'https://t.me/Don_bargo'};
+async function sendLead(lead){
+  const body={channel:'web',customer:lead.name||'Клиент',contact:lead.contact||null,text:lead.text,source:lead.source,items:lead.items||null,website:lead.hp||''};
+  if(SN_LEADS.api){
+    try{
+      const r=await fetch(SN_LEADS.api.replace(/\/$/,'')+'/inbound/customer-message',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});
+      if(r.ok)return 'api';
+    }catch(e){}
+  }
+  const subject=encodeURIComponent(lead.source==='site-order'?'Заказ с сайта StyleNova':'Заявка с сайта StyleNova');
+  const text=encodeURIComponent(`${lead.name||''} ${lead.contact||''}\n\n${lead.text}`);
+  location.href=`mailto:${SN_LEADS.mail}?subject=${subject}&body=${text}`;
+  return 'mail';
+}
 
 function buildFilters(){
   const mk=(id,key,items)=>{$(id).innerHTML=items.map(v=>
@@ -851,12 +872,23 @@ function chg(id,d){const it=cart.find(c=>c.id===id);it.q+=d;if(it.q<1)cart=cart.
 function rm(id){cart=cart.filter(c=>c.id!==id);save()}
 function openCart(){$('#drawer').classList.add('on');$('#scrim').classList.add('on')}
 function closeCart(){$('#drawer').classList.remove('on');$('#scrim').classList.remove('on')}
-function checkout(){
+async function checkout(){
   if(!cart.length){toast('Сначала добавьте товар');return}
-  toast('Заявка принята — перезвоним и назовём цену');
-  cart=[];save();setTimeout(closeCart,700);
+  const name=$('#oname').value.trim(),phone=$('#ophone').value.trim();
+  if(phone.replace(/\D/g,'').length<10){toast('Укажите телефон — менеджер перезвонит');$('#ophone').focus();return}
+  const items=cart.map(c=>{const p=P.find(x=>x.id===c.id);return{name:`${p.n} (SN-${1000+p.id})`,qty:c.q,price:p.p||null}});
+  const sum=cart.reduce((s,c)=>s+P.find(p=>p.id===c.id).p*c.q,0);
+  const btn=$('#obtn');btn.disabled=true;
+  const via=await sendLead({source:'site-order',name,contact:phone,text:`Заказ с сайта${sum?' на '+fmt(sum):' (цены по запросу)'}. Перезвонить и подтвердить наличие.`,items,hp:$('#ohp').value});
+  btn.disabled=false;
+  toast(via==='api'?'Заявка принята — перезвоним в течение 15 минут':'Откроется письмо с заказом — отправьте его, и мы перезвоним');
+  cart=[];save();$('#oname').value='';$('#ophone').value='';setTimeout(closeCart,700);
 }
-function sendQuote(f){toast('Заявка отправлена, ответим в рабочее время');f.reset()}
+async function sendQuote(f){
+  const d=new FormData(f);
+  const via=await sendLead({source:'site-wholesale',name:d.get('name'),contact:d.get('phone'),text:`Оптовый запрос: ${d.get('task')||'подборка техники для организации'}`,hp:d.get('website')});
+  toast(via==='api'?'Заявка отправлена, ответим в рабочее время':'Откроется письмо — отправьте его, ответим в рабочее время');f.reset()
+}
 let tt;function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('on'),2600)}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCart()});
 
