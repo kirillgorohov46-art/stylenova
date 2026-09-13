@@ -1,0 +1,14 @@
+# Секреты — НИКОГДА не коммитим настоящий .env
+.env
+
+# Виртуальное окружение Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Результаты работы парсера
+results/
+*.csv
+*.json
+!targets.example.json
