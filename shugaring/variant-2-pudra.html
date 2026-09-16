@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Шугаринг в Ижевске: сахарная депиляция, онлайн-календарь свободных окон, запись через ВК.">
+<!--ARTIFACT-START-->
+<title>Пудровый кабинет</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFFFFF; --ground:#F1EDF1; --ink:#241E27; --mauve:#6E4A63; --mauve-2:#8F6A84;
+  --blush:#E7C9D4; --line:#DFD6DE; --muted:#7B7280; --free:#3C8A6B; --busy:#B49CAB;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:'Golos Text',system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;margin:0;line-height:1.05;letter-spacing:-.005em;text-wrap:balance}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:22px;position:relative}
+.sec{padding-block:70px}
+.lbl{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--mauve-2);font-weight:600}
+.sec-hd{display:grid;gap:14px;padding-bottom:26px;margin-bottom:34px;border-bottom:1px solid var(--line)}
+.sec-hd h2{font-size:clamp(30px,5vw,48px)}
+.lead{color:var(--muted);max-width:60ch;margin:0;font-size:16px}
+.num{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--mauve-2);font-variant-numeric:tabular-nums}
+
+.demo{background:var(--ink);color:#EFE7EE;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;text-align:center;padding-block:8px;padding-inline:16px}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:rgba(241,237,241,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:22px;height:74px}
+.brand{flex-shrink:0;line-height:1.1}
+.brand b{display:block;font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:600;letter-spacing:.01em}
+.brand i{font-style:normal;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--mauve-2)}
+.menu{display:flex;gap:24px;margin-left:auto}
+.menu a{font-size:14px;color:var(--muted);padding-block:6px;border-bottom:1px solid transparent;transition:.16s}
+.menu a:hover{color:var(--ink);border-color:var(--mauve)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 24px;border-radius:2px;font-weight:500;font-size:14.5px;transition:.18s;white-space:nowrap}
+.btn-m{background:var(--mauve);color:#FBF7FA}
+.btn-m:hover{background:var(--ink)}
+.btn-o{border:1px solid var(--line);color:var(--ink);background:var(--paper)}
+.btn-o:hover{border-color:var(--mauve);color:var(--mauve)}
+.hd .btn{flex-shrink:0}
+
+.hero{background:var(--paper);border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:end;padding-block:78px 54px}
+.hero h1{font-size:clamp(42px,8vw,86px);font-weight:400}
+.hero h1 em{font-style:italic;color:var(--mauve)}
+.hero .sub{margin:26px 0 0;color:var(--muted);max-width:46ch}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.hero-side{border-left:1px solid var(--line);padding-left:32px;display:grid;gap:20px}
+.hs b{display:block;font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--mauve);line-height:1}
+.hs span{font-size:13.5px;color:var(--muted)}
+
+.bens{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:var(--paper);border-bottom:1px solid var(--line)}
+.ben{padding:28px 24px;border-left:1px solid var(--line)}
+.ben:first-child{border-left:0}
+.ben b{display:block;font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;margin-bottom:6px}
+.ben span{font-size:14px;color:var(--muted)}
+
+#priceList{list-style:none;margin:0;padding:0}
+#priceList li{display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:baseline;padding-block:15px;border-bottom:1px solid var(--line)}
+#priceList li:first-child{border-top:1px solid var(--line)}
+.pn{font-size:17px;order:1}
+.pd{font-size:12.5px;color:var(--muted);order:2;justify-self:end;white-space:nowrap}
+.pp{order:3;font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:600;color:var(--mauve);font-variant-numeric:tabular-nums;min-width:96px;text-align:right}
+.price-note{margin-top:20px;font-size:14px;color:var(--muted)}
+
+.cal{background:var(--paper);border:1px solid var(--line);padding:32px}
+.cal-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.cal-top h3{font-size:27px}
+.next{font-size:13px;color:var(--free);margin-top:6px;font-weight:500}
+#masterBtn{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:3px}
+#masterBtn:hover{color:var(--mauve);border-color:var(--mauve)}
+.strip{display:flex;gap:0;overflow-x:auto;margin-top:24px;scroll-snap-type:x proximity;border:1px solid var(--line)}
+.day{flex:0 0 auto;width:78px;scroll-snap-align:start;display:grid;gap:2px;justify-items:center;
+  padding:14px 6px;border-left:1px solid var(--line);background:var(--paper);transition:.14s}
+.day:first-child{border-left:0}
+.day:hover{background:#FAF6F9}
+.day .dow{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.day .num{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;font-variant-numeric:tabular-nums;color:var(--ink)}
+.day .mark{font-size:10.5px;color:var(--free)}
+.day.full .mark,.day.off .mark{color:var(--busy)}
+.day.off{background:#F6F2F6;color:var(--muted)}
+.day.on{background:var(--ink)}
+.day.on .num{color:var(--paper)}
+.day.on .dow{color:var(--blush)}
+.day.on .mark{color:var(--blush)}
+.cal-day{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin:28px 0 16px}
+.cal-day h4{margin:0;font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
+.legend{display:flex;gap:16px;font-size:11.5px;color:var(--muted);margin-left:auto}
+.legend i{font-style:normal;display:inline-flex;align-items:center;gap:6px}
+.legend i::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--free)}
+.legend i.b::before{background:var(--busy)}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.slot{display:grid;gap:2px;padding:14px 12px;background:var(--paper);text-align:left;transition:.14s}
+.slot b{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;font-variant-numeric:tabular-nums}
+.slot i{font-style:normal;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--free)}
+.slot.free:hover{background:#FBF4F8}
+.slot.busy{background:#F6F2F6;color:var(--busy);cursor:not-allowed}
+.slot.busy i{color:var(--busy)}
+.slot.past{color:#BDB5BC;cursor:not-allowed}
+.slot.past i{color:#BDB5BC}
+.slot.sel{background:var(--mauve);color:#FBF7FA}
+.slot.sel i{color:var(--blush)}
+body.master .slot{cursor:pointer}
+.cal-empty{margin:0;padding:26px;border:1px dashed var(--line);color:var(--muted)}
+#calNote{font-size:13.5px;color:var(--muted);margin:18px 0 0}
+#bkForm{margin-top:26px;padding-top:26px;border-top:1px solid var(--line);display:grid;gap:14px}
+.pick{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mauve)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#bkForm label{display:grid;gap:7px;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
+#bkForm input,#bkForm select,#bkForm textarea{
+  background:var(--paper);border:0;border-bottom:1px solid var(--line);color:var(--ink);
+  padding:11px 2px;outline:none;font:inherit;font-size:16px;letter-spacing:0;text-transform:none;width:100%;border-radius:0}
+#bkForm textarea{resize:vertical;min-height:62px}
+#bkForm input:focus,#bkForm select:focus,#bkForm textarea:focus{border-color:var(--mauve)}
+#bkForm .btn{justify-self:start;padding-inline:38px}
+#bkMsg{font-size:13.5px;color:var(--muted);background:#FAF6F9;border-left:2px solid var(--blush);padding:14px 16px;margin:0}
+
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.shot{aspect-ratio:4/5;max-width:100%;background:var(--paper);border:1px solid var(--line);
+  display:grid;place-content:center;gap:6px;text-align:center;padding:18px;color:var(--muted)}
+.shot b{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--mauve-2)}
+.shot span{font-size:13.5px;font-family:'Cormorant Garamond',serif;font-size:19px}
+.shot:nth-child(odd){background:linear-gradient(180deg,#FBF4F8,var(--paper))}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);background:var(--paper)}
+.card{padding:30px 28px;border-left:1px solid var(--line)}
+.card:first-child{border-left:0}
+.card h3{font-size:24px;margin-bottom:12px}
+.card p{color:var(--muted);font-size:14.5px;margin:0}
+.card ul{margin:0;padding-left:16px;display:grid;gap:7px;color:var(--muted);font-size:14.5px}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.quote{border-top:2px solid var(--blush);padding-top:20px}
+.quote p{font-family:'Cormorant Garamond',serif;font-size:21px;line-height:1.4;margin:0 0 16px}
+.quote b{font-size:13.5px;font-weight:600}
+.quote span{display:block;font-size:11.5px;color:var(--muted)}
+
+.contacts{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);background:var(--paper)}
+.cbox{padding:32px;border-left:1px solid var(--line);display:grid;gap:14px;align-content:start}
+.cbox:first-child{border-left:0}
+.cbox h3{font-size:26px}
+.crow{display:grid;grid-template-columns:104px 1fr;gap:12px;align-items:baseline;font-size:15px}
+.crow span:first-child{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.crow a{border-bottom:1px solid var(--line)}
+.crow a:hover{color:var(--mauve);border-color:var(--mauve)}
+footer{background:var(--ink);color:#C9BCC6;padding-block:34px;font-size:13px}
+.fin{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,160%);
+  background:var(--ink);color:#FBF7FA;padding:14px 24px;font-size:14px;z-index:120;transition:.3s;
+  box-shadow:0 20px 40px -18px rgba(36,30,39,.6);max-width:calc(100% - 32px);text-align:center}
+.toast.on{transform:translate(-50%,0)}
+:focus-visible{outline:2px solid var(--mauve);outline-offset:3px}
+
+@media (max-width:1000px){
+  .hero .wrap{grid-template-columns:1fr;gap:34px;padding-block:52px 40px}
+  .hero-side{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:24px;grid-template-columns:repeat(3,1fr);display:grid}
+  .bens{grid-template-columns:repeat(2,1fr)}
+  .ben:nth-child(3){border-left:0}
+  .ben:nth-child(n+3){border-top:1px solid var(--line)}
+  .cards,.quotes{grid-template-columns:1fr}
+  .card{border-left:0;border-top:1px solid var(--line)}
+  .card:first-child{border-top:0}
+  .contacts{grid-template-columns:1fr}
+  .cbox{border-left:0;border-top:1px solid var(--line)}
+  .cbox:first-child{border-top:0}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .menu{display:none}
+}
+@media (max-width:640px){
+  .sec{padding-block:48px}
+  .cal{padding:18px}
+  .bens{grid-template-columns:1fr}
+  .ben{border-left:0;border-top:1px solid var(--line)}
+  .ben:first-child{border-top:0}
+  .hero-side{grid-template-columns:1fr 1fr}
+  .f2{grid-template-columns:1fr}
+  #priceList li{grid-template-columns:1fr auto}
+  .pd{order:3;grid-column:1/2;font-size:12px;justify-self:start}
+  .pp{order:2;min-width:0}
+  .slots{grid-template-columns:repeat(auto-fill,minmax(98px,1fr))}
+  .crow{grid-template-columns:1fr;gap:2px}
+  .hd{height:64px;gap:14px}
+  header{background:var(--ground)}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="demo">Демо-макет · вариант 2 «Пудра» — тексты, цены и фото заменим на ваши из ВК</div>
+
+<header><div class="wrap hd">
+  <a class="brand" href="#top"><b>Шугаринг 18</b><i>Ижевск</i></a>
+  <nav class="menu">
+    <a href="#prices">Прайс</a>
+    <a href="#calendar">Запись</a>
+    <a href="#works">Кабинет</a>
+    <a href="#care">Памятка</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <a class="btn btn-m" href="#calendar">Записаться</a>
+</div></header>
+
+<main id="top">
+
+<section class="hero"><div class="wrap">
+  <div>
+    <div class="lbl">Сахарная депиляция · Ижевск</div>
+    <h1 style="margin-top:22px">Гладкость,<br>которая <em>не спорит</em><br>с кожей</h1>
+    <p class="sub">Плотная сахарная паста, мануальная техника, никакого воска и «дожимов» пинцетом. Веду по одному человеку: у вас есть время раздеться, задать вопросы и спокойно одеться после.</p>
+    <div class="hero-cta">
+      <a class="btn btn-m" href="#calendar">Свободные окна</a>
+      <a class="btn btn-o" href="#prices">Смотреть прайс</a>
+    </div>
+  </div>
+  <div class="hero-side">
+    <div class="hs"><b>6</b><span>лет практики в депиляции</span></div>
+    <div class="hs"><b>2 300+</b><span>проведённых процедур</span></div>
+    <div class="hs"><b>3–4 нед.</b><span>держится результат</span></div>
+  </div>
+</div></section>
+
+<div class="bens">
+  <div class="ben"><b>Стерильно</b><span>Одноразовое вскрываю при вас, кушетку дезинфицирую между клиентами.</span></div>
+  <div class="ben"><b>Аккуратно</b><span>Сложные зоны — пастой, а не пинцетом: меньше травмы фолликула.</span></div>
+  <div class="ben"><b>Честное время</b><span>Запись не внахлёст: процедура начинается минута в минуту.</span></div>
+  <div class="ben"><b>С сопровождением</b><span>После первой процедуры пишу, как проходит восстановление.</span></div>
+</div>
+
+<section class="sec" id="prices"><div class="wrap">
+  <div class="sec-hd">
+    <div class="lbl"><span class="num">01</span> &nbsp;Прайс</div>
+    <h2>Цены и длительность</h2>
+    <p class="lead">Цена фиксированная: густота волоса и перерыв между процедурами на неё не влияют. Комплексы считаю дешевле, чем те же зоны по отдельности.</p>
+  </div>
+  <ul id="priceList"></ul>
+  <p class="price-note">Наличные и перевод. Первое посещение — минус 10% на комплекс.</p>
+</div></section>
+
+<section class="sec" id="calendar"><div class="wrap">
+  <div class="sec-hd">
+    <div class="lbl"><span class="num">02</span> &nbsp;Онлайн-запись</div>
+    <h2>Календарь свободных окон</h2>
+    <p class="lead">Две недели вперёд. Светлое время — свободно, серое — уже занято. Выберите час, оставьте имя и телефон — заявка придёт мастеру.</p>
+  </div>
+
+  <div class="cal">
+    <div class="cal-top">
+      <div>
+        <h3>Ближайшие две недели</h3>
+        <div class="next">Ближайшее окно: <span id="nextFree"></span></div>
+      </div>
+      <button id="masterBtn" type="button">Я мастер</button>
+    </div>
+
+    <div class="strip" id="dayStrip"></div>
+
+    <div class="cal-day">
+      <h4 id="dayTitle"></h4>
+      <div class="legend"><i>свободно</i><i class="b">занято</i></div>
+    </div>
+
+    <div class="slots" id="slotGrid"></div>
+    <p id="calNote">Выберите день и свободное время — заявка уйдёт мастеру в личные сообщения ВК.</p>
+
+    <form id="bkForm">
+      <div class="pick">Вы выбрали: <span id="pickLine">—</span></div>
+      <label for="svcSel">Услуга<select id="svcSel"></select></label>
+      <div class="f2">
+        <label for="bkName">Имя<input id="bkName" type="text" autocomplete="name" placeholder="Как к вам обращаться"></label>
+        <label for="bkPhone">Телефон<input id="bkPhone" type="tel" autocomplete="tel" placeholder="+7 ___ ___-__-__"></label>
+      </div>
+      <label for="bkNote">Комментарий<textarea id="bkNote" placeholder="Первый раз, есть вопросы по подготовке"></textarea></label>
+      <button class="btn btn-m" type="submit">Отправить заявку</button>
+      <p id="bkMsg" hidden></p>
+    </form>
+  </div>
+</div></section>
+
+<section class="sec" id="works"><div class="wrap">
+  <div class="sec-hd">
+    <div class="lbl"><span class="num">03</span> &nbsp;Кабинет</div>
+    <h2>Где проходит процедура</h2>
+    <p class="lead">Здесь встанут фото из альбомов ВК: кабинет, рабочее место, результаты и документы об обучении.</p>
+  </div>
+  <div class="gal">
+    <div class="shot"><b>фото 1</b><span>кабинет</span></div>
+    <div class="shot"><b>фото 2</b><span>рабочее место</span></div>
+    <div class="shot"><b>фото 3</b><span>результат</span></div>
+    <div class="shot"><b>фото 4</b><span>сертификат</span></div>
+  </div>
+</div></section>
+
+<section class="sec" id="care"><div class="wrap">
+  <div class="sec-hd">
+    <div class="lbl"><span class="num">04</span> &nbsp;Памятка</div>
+    <h2>Подготовка и уход</h2>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>До процедуры</h3>
+      <ul>
+        <li>Длина волоса 4–5 мм</li>
+        <li>Накануне — скраб, утром только душ</li>
+        <li>Без загара и бассейна двое суток</li>
+        <li>Не в первые дни цикла</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>После</h3>
+      <ul>
+        <li>48 часов без бани и спорта</li>
+        <li>С третьего дня — скраб два раза в неделю</li>
+        <li>Средство от вросших волос ежедневно</li>
+        <li>Хлопковое свободное бельё</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Следующий визит</h3>
+      <p>Через три–четыре недели. К этому сроку волос отрастает до рабочей длины, а кожа реагирует спокойнее — процедура проходит быстрее и почти без ощущений.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-hd">
+    <div class="lbl"><span class="num">05</span> &nbsp;Отзывы</div>
+    <h2>Слова клиентов</h2>
+    <p class="lead">Подставим настоящие отзывы из обсуждений группы ВК.</p>
+  </div>
+  <div class="quotes">
+    <div class="quote"><p>«Шла с ужасом, вышла с мыслью „и всё?“. Даже глубокое бикини терпимо, кожа не покраснела».</p><b>Демо-отзыв</b><span>заменим на отзыв из ВК</span></div>
+    <div class="quote"><p>«Хожу полгода — врастания ушли совсем. И время не сдвигают, это редкость».</p><b>Демо-отзыв</b><span>заменим на отзыв из ВК</span></div>
+    <div class="quote"><p>«Чисто, спокойно, всё вскрывают при мне. За это и возвращаюсь».</p><b>Демо-отзыв</b><span>заменим на отзыв из ВК</span></div>
+  </div>
+</div></section>
+
+<section class="sec" id="contacts"><div class="wrap">
+  <div class="sec-hd">
+    <div class="lbl"><span class="num">06</span> &nbsp;Контакты</div>
+    <h2>Связь и адрес</h2>
+  </div>
+  <div class="contacts">
+    <div class="cbox">
+      <h3>Написать</h3>
+      <div class="crow"><span>ВКонтакте</span><a href="https://vk.ru/shugaizhevsk18" target="_blank" rel="noopener">vk.ru/shugaizhevsk18</a></div>
+      <div class="crow"><span>Телефон</span><a href="tel:+79120000000">+7 912 000-00-00</a></div>
+      <div class="crow"><span>WhatsApp</span><span>по номеру телефона</span></div>
+      <a class="btn btn-m" style="justify-self:start;margin-top:6px" href="https://vk.ru/shugaizhevsk18" target="_blank" rel="noopener">Написать в ВК</a>
+    </div>
+    <div class="cbox">
+      <h3>Кабинет</h3>
+      <div class="crow"><span>Адрес</span><span>Ижевск, адрес уточним</span></div>
+      <div class="crow"><span>График</span><span>пн–сб 09:00–19:30, вс выходной</span></div>
+      <div class="crow"><span>Оплата</span><span>наличные, перевод</span></div>
+      <p class="lead" style="font-size:14px;margin-top:4px">Точный адрес и ориентиры мастер присылает после подтверждения записи.</p>
+    </div>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap fin">
+  <span>Шугаринг 18 · Ижевск · демо-макет</span>
+  <span>Сделано на движке StyleNova</span>
+</div></footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const VK_URL = 'https://vk.ru/shugaizhevsk18';
+const SERVICES = [
+  {n:'Глубокое бикини', p:1200, d:40},
+  {n:'Классическое бикини', p:800, d:25},
+  {n:'Подмышечные впадины', p:400, d:15},
+  {n:'Голени до колена', p:700, d:30},
+  {n:'Ноги полностью', p:1200, d:55},
+  {n:'Руки до локтя', p:500, d:25},
+  {n:'Руки полностью', p:700, d:35},
+  {n:'Лицо: усики или подбородок', p:250, d:10},
+  {n:'Комплекс: глубокое бикини + подмышки', p:1400, d:50},
+  {n:'Комплекс: бикини + подмышки + ноги', p:2400, d:90}
+];
+</script>
+<script src="_engine.js"></script>
+<!--ARTIFACT-END-->
+</body>
+</html>
